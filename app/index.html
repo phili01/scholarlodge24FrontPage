@@ -6,10 +6,14 @@
   <title>Scholars LOdge</title>
   <meta name="keywords" content="free online education , entertaiment and more">
   <meta name="description" content="free resources for download , free monthly quiz and past questions.">
+<!--
    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+-->
+<!--  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>-->
+  <script src="./assets/fonts/js/fontawesome-all.js"></script>
+  <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 <body>
 	<header>
@@ -23,23 +27,35 @@
 			<input type="submit" value="" name="">
 		</form>
 		<nav>
-			<li><i class="fab fa-home"></i>Home</li>
+			<li><i class="fas fa-home"></i>Home</li>
 			<li><i class="fas fa-hourglass-half"></i>Hot Seat</li>
 			<li><i class="fas fa-globe"></i>News</li>
 			<li><i class="fas fa-question"></i>Add Question</li>
 			<li><i class="fas fa-archive"></i>Study Materials</li>
 			<li><i class="fas fa-shopping-cart"></i>Store</li>
 			<li><i class="fas fa-users"></i>Chat Groups</li>
-			<li><i class="fas fa-envelope-o"></i>Contact Us</li>
+			<li><i class="far fa-envelope"></i>Contact Us</li>
 		</nav>
 	</header>
 	
-	<div class="hero-large">
-		<img>
-		<h1>ARE YOU A SCHOLAR ?</h1>
-		<p></p>
-		<p><a href="">Ask Questions</a></p>
-		<p><a href="">Solve Questions</a></p>
+	<div class="hero-section">
+	
+		<picture>
+		    <source srcset="./assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media="(min-width: 1380px)">
+		    <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+          <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+          <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Coastal view of ocean and mountains" class="hero-section__image">
+		</picture>
+		
+		<div class="hero-section__text-content">
+		    <h1 class="hero-section__title">ARE YOU A SCHOLAR ?</h1>
+             <h2 class="hero-section__subtitle">Millions of scholars wish to learn from you !!!</h2>
+             <p class="hero-section__description">To help other scholars prepare pls ?</p>
+             <div class="hero-section__btn-container">
+                <a href="" class="btn btn--white btn--b-margin btn--d-block btn--r-margin">Ask Questions</a>
+                <a href="" class="btn btn--blue btn--d-block">Solve Questions</a>
+             </div>
+		</div>
 	</div>
 	
 	<div id="our-latest">
@@ -95,7 +111,7 @@
 			
 			<h2>benefits of star </h2>
 			<h3>Your star is your rank </h3>
-			<i class="fas fa-star-o"></i>
+			<i class="far fa-star"></i>
 			<ul>
 				<li>free Access to upload products to the store</li>
 				<li>Access to personnal portal</li>
@@ -117,11 +133,11 @@
 		<h3>views:</h3>
 		<a href="">11111111</a>
 		
-		<i class="fas fa-comments-o"></i>
+		<i class="far fa-comments"></i>
 		<h3>commentt:</h3>
 		<a href="">11111111</a>
 		
-		<i class="fas fa-heart-o"></i>
+		<i class="far fa-heart"></i>
 		<h3>views:</h3>
 		<a href="">11111111</a>
 		
@@ -134,13 +150,13 @@
 		<h3>views:</h3>
 		<a href="">11111111</a>
 		
-		<i class="fas fa-comments-o"></i>
+		<i class="far fa-comments"></i>
 		<h3>commentt:</h3>
 		<a href="">11111111</a>
 		
-		<i class="fas fa-heart-o"></i>
+		<i class="far fa-heart"></i>
 		<h3>views:</h3>
-		<a href="">11111111</a>	
+		<a href="">11111111</a>
 	</div>
 	
 	<div id="upcoming-events">
@@ -157,8 +173,8 @@
 		<a href="#">View All</a>
 		
 		<h3>Details</h3>
-		<i class="fas fa-clock-o"></i><p>: 1222 GMT</p>
-		<i class="fas fa-calender-check-o"></i><p>: 1222 GMT</p>
+		<i class="far fa-clock"></i><p>: 1222 GMT</p>
+		<i class="far fa-calendar-check"></i><p>: 1222 GMT</p>
 		<p>change time zone</p><select name="" id="">wwwww</select>
 		<a href="#">Start Now</a>
 	</div>
@@ -206,14 +222,14 @@
 	
 	<footer>
 	
-		<h3><i class="fas fa-envelope-o"></i>contact us</h3>
+		<h3><i class="far fa-envelope"></i>contact us</h3>
 		<p>SG24@gmail.com</p>
 		<i class="fas fa-circle"></i>
 		<i class="fas fa-circle"></i>
 		<i class="fas fa-circle"></i>
 		<i class="fas fa-circle"></i>
 		
-		<h3><i class="fas fa-bell-o"></i>Subscribe to newsLetter</h3>
+		<h3><i class="far fa-bell"></i>Subscribe to newsLetter</h3>
 		<p>Subscribe to our newsletter to stay up to date with the latest news and offers</p>
 		<form action="" method="post">
 			<input type="text">
