@@ -1,0 +1,65 @@
+.section-title {
+    
+    position: relative;
+	font-size: .9rem;
+	font-weight: 300;
+	text-align: center;
+/*    color: #fff;*/
+    padding: 8px 0;
+    display: block;
+    margin: 0;
+    
+	@mixin atSmall {
+		font-size: 1.5rem;
+	}
+	
+/*
+	strong {
+		font-weight: 500;
+	}
+*/
+	
+    &--t-margin {
+        margin: 40px 0 0 0 !important;
+    }
+    
+    &--blue {
+         background-color: $mainBlue;
+    }
+	
+	&__icon {
+	    margin-right: 10px;
+        
+		@mixin atSmall {
+		    margin-right: 10px;
+			display: inline;
+            color: $mainGray;
+            font-size: 1.3rem;
+		} 
+	}
+    
+    &--t-margin {
+        margin: 0 ;
+    }
+    
+    &--b-margin {
+        margin-bottom: 2em ;
+    }
+    
+    &--r-color {
+        color: $mainRed;
+    }
+    
+    &--black-color {
+        color: $mainBlack;
+    }
+	
+    &--b-color {
+        color: $mainBlue;
+    }
+    
+    &--w-color {
+        color: #fff;
+    }
+	
+}

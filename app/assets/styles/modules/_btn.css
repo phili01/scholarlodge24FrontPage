@@ -1,0 +1,52 @@
+.btn {
+    background-color: $mainBlue;
+    color: #fff;
+    text-decoration: none;
+    padding: .75rem 1.2rem;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 0.7rem;
+    
+    &--white {
+        background-color: #fff;
+        color: $mainRed;
+    }
+    
+    &--b-margin {
+        margin-bottom: 1em;
+        
+        @mixin atSmall {
+            margin-bottom: 0;
+        }
+    }
+
+    &--d-block {
+        display: block;
+        @mixin atSmall {
+             display: inline;
+        }
+       
+    }    
+    
+    
+    &--r-margin {
+        @mixin atSmall {
+            margin-right: 40px;
+        }
+    }
+    
+    
+    &--padding-small {
+        padding: .625rem .5rem;
+    }
+    
+    &--border-shadow {
+        background-color: #fff;
+        box-shadow: 0px 0px 1.94px 0.06px rgba(244, 245, 248, 0.28);
+        border: 1px solid rgb(222, 211, 211);
+    }
+    
+    @mixin atSmall {
+        font-size: 1.25rem
+    }
+}

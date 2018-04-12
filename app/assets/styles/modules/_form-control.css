@@ -1,0 +1,65 @@
+.form-control {
+   
+    position: relative;
+
+    &__form-group {
+     @mixin border;
+      border: none;
+      border-radius: 10px;
+        
+    }
+    
+    
+    &__padding-medium {
+        padding: 9px 0;
+         display: block;
+         @mixin atSmall {
+           padding: 15px 0; 
+        }
+    }
+    
+    &__padding-small {
+        padding: 4px 0;
+        display: block;
+    }
+    
+    &__form-width--smaller {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    
+    &__form-width--large {
+         width: 80%;
+         margin: 0 auto;
+    }
+    
+    &__form-title {
+        position: absolute;
+        top: 30%;
+        width: 80%;
+        transform: translateY(-30%);
+        font-size: 0.8rem;
+        left: 60%;
+        transform: translateX(-60%);
+        color: $mainBlack;
+        
+    }
+    
+    &__form-submit {
+        max-width: 5rem;
+        position: absolute;
+        overflow: hidden;
+        border-bottom-right-radius: 10px; 
+        border-top-right-radius: 10px; 
+        top: 5%;
+        transform: translateY(-5%);
+        left: 89%;
+        transform: translateX(-89%);
+    }
+    
+      &--t-margin {
+          margin: 12px 0 0 0 ;
+          padding: 0;
+    }
+    
+}

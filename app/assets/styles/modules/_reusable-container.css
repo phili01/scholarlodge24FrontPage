@@ -1,0 +1,224 @@
+.reusable-container {
+	position: relative;
+    padding-top: 10px;
+    
+    @mixin atSmall {
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+/*    @mixin border;*/
+    border: 1px solid $mainGray;
+    
+    &--t-margin {
+        margin-top: 40px;
+
+        @mixin atLarge {
+            margin-top: 0px;
+        }
+    }
+    
+    &__icons--gray {
+        border: none;   
+        @mixin border;
+    }
+    
+    &--t-padding {
+        padding-top: 20px;
+
+        @mixin atLarge {
+            padding-top: 30px;
+        }
+    }
+    
+    &--l-margin{
+        padding-left: 10px;
+    }
+    
+	p {
+		font-weight: 300;
+		line-height: 1.65;
+        
+		@mixin atSmall {
+			font-size: 1.125rem;
+		}
+	}
+	
+     &--b-margin {
+        margin: 0 0 1.8rem 0;
+    }
+    
+    &--no-margin {
+        margin: 0 0 0 0;
+    }
+    
+	a {
+		font-weight: 400;
+/*		color: $mainBlack;*/
+        text-decoration: none;
+        
+	}
+    
+     &__a-underline {
+        text-decoration: underline;
+    }
+    
+    &--a__b-color{
+        color: $mainBlack;
+    }
+    
+     &__viewall {
+        
+/*         display: block;*/
+    }
+    
+    &__viewall-btn {
+        background-color: $mainRed;
+        padding: 5px 5px;
+        display: inline;
+    
+    }
+    
+    &--text-center {
+        text-align: center;
+    }
+    
+    &--text-center--until-medium {
+        text-align: center;
+    }
+    
+    &--b-margin__content{
+        margin-bottom: 30px !important;
+    }
+    
+    &__b--margin {
+        margin: 2px ; 
+        padding-bottom: 0;
+        padding-top: 10px;
+    }
+    
+    &__icons {
+        max-width: auto;
+        margin: 0 auto;
+    }
+    
+    &__icons-r-margin {
+        margin-right: 10px;
+    }
+    
+    ul {
+        list-style: none;  
+	    @mixin clearfix;
+         padding: 0;
+    }
+    
+    li {
+        @mixin atMedium {
+            float: left;
+            margin: 0 20px 0 0;
+        }
+    }
+    
+    &--list-no__float{
+       float: none !important;
+    }
+    
+    &__list-item--a-margin{
+        margin: 15px 3px 1.5rem 0;
+        
+        @mixin atSmall {
+             margin: 15px 3px 0.5rem 0;
+        }
+    }
+
+     &__list-item--a-margin-large{
+        padding: 6px 0 .5rem 0;
+         
+         @mixin atSmall {
+            padding: 6px 0 1.5rem 0;
+         }
+    }
+    
+    &__icons-r-color {
+        color: $mainRed;
+    }
+    
+    &__icons-y-color {
+        color: yellow;
+    }
+    
+     &__icons-b-color {
+        color: $mainBlue;
+    }
+    
+    &__icons-g-color {
+        color: $mainGray;
+    }
+    
+    
+    &__list-item--title{
+        margin: 0;
+        display: inline;
+        font-weight: 300;
+        font-size: 0.8rem;
+        
+        @mixin atSmall {
+            font-size: 1rem;
+        }
+    }
+    &__list-item--link {
+        color: $mainBlack;  
+/*        font-weight: 500 !important;*/
+    }
+    
+    
+    &__icons--center {
+        
+        @mixin atSmall {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        @mixin atMedium {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+    
+    
+    &__list--center {
+        display: flex;
+        
+        @mixin atSmall {
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        @mixin atMedium {
+            width: 100%;
+        }
+    }
+    
+    &__list-item--center {
+        margin: 15px 3px 1.5rem 0;
+        
+        @mixin atSmall {
+        margin: 0;
+        
+        float: left;
+        width: 50%;
+        }
+        
+        @mixin atMedium {
+           width: auto;
+            margin: 0 auto;
+          padding-left: 10%;
+            margin-bottom: 20px !important;
+            background: red;
+        }
+    }
+    
+    &__list-item--center:last-child {
+        padding-left: -10%;
+    }
+	
+}

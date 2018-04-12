@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+<!--  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>-->
   <title>Scholars LOdge</title>
   <meta name="keywords" content="free online education , entertaiment and more">
   <meta name="description" content="free resources for download , free monthly quiz and past questions.">
 <!--
-   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 -->
-<!--  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>-->
+<!--  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJysyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>-->
   <script src="./assets/fonts/js/fontawesome-all.js"></script>
   <link rel="stylesheet" href="temp/styles/styles.css">
+    <link rel="stylesheet" href="owl-slider/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="owl-slider/owlcarousel/assets/owl.theme.default.min.css">
+ <script src="owl-slider/vendors/jquery.min.js"></script>
+    <script src="owl-slider/owlcarousel/owl.carousel.js"></script>
 </head>
 <body>
 	<header>
@@ -46,117 +51,291 @@
           <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
           <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Coastal view of ocean and mountains" class="hero-section__image">
 		</picture>
-		
-		<div class="hero-section__text-content">
-		    <h1 class="hero-section__title">ARE YOU A SCHOLAR ?</h1>
-             <h2 class="hero-section__subtitle">Millions of scholars wish to learn from you !!!</h2>
-             <p class="hero-section__description">To help other scholars prepare pls ?</p>
-             <div class="hero-section__btn-container">
-                <a href="" class="btn btn--white btn--b-margin btn--d-block btn--r-margin">Ask Questions</a>
+       
+        <div class="hero-section__text-content">
+                <h1 class="hero-section__title">ARE YOU A SCHOLAR ?</h1>
+                <h2 class="hero-section__subtitle">Millions of scholars wish to learn from you !!!</h2>
+                <p class="hero-section__description">To help other scholars prepare pls ?</p>
+                <div class="hero-section__btn-container">
+                <a href="" class="btn btn--white btn--b-margin btn--d-block btn--r-margin btn--border-shadow">Ask Questions</a>
                 <a href="" class="btn btn--blue btn--d-block">Solve Questions</a>
+         </div>
+        </div>
+	</div>
+	
+	<div id="our-latest" class="page-section">
+	    <div class="wrapper">
+            <div class="row row--gutters">
+                <div class="row__large-8">
+                   <div class="tab tab--bg-gray tab--b-margin">
+                       <ul>
+                        <li class="tab__active">Recent Questions</li>
+                        <li>Upcoming Events</li>
+                        <li>Latest News</li>
+                        <li>Tips and Tricks</li>
+                      </ul>
+                   </div>
+                   
+                    <div class="reusable-container reusable-container__icons--gray reusable-container--b-margin__content">
+                       <p class="reusable-container--b-margin reusable-container__a-underline"><a href="" class="reusable-container--a__b-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</a> </p>
+                    <div class="reusable-container__icons">
+                       <ul>
+                        <li class="reusable-container__list-item--a-margin"> 
+                            <i class="fas fa-eye reusable-container__icons-b-color"></i>
+                            <h3 class="reusable-container__list-item--title">views</h3>
+                            <a href="" class="reusable-container__list-item--link">11111111</a>
+                        </li>
+                        <li class="reusable-container__list-item--a-margin">
+                            <i class="far fa-comments reusable-container__icons-b-color"></i>
+                            <h3 class="reusable-container__list-item--title">comment</h3>
+                            <a href="" class="reusable-container__list-item--link">11111111</a>
+                        </li>
+                         <li class="reusable-container__list-item--a-margin">    
+                            <i class="far fa-meh reusable-container__icons-b-color"></i>
+                            <h3 class="reusable-container__list-item--title">Helpful</h3>
+                            <a href="" class="reusable-container__list-item--link">11111111</a>
+                         </li>
+                       </ul>
+                       
+                    </div>
+                   </div> 
+                   
+                    <div class="reusable-container reusable-container__icons--gray reusable-container--b-margin__content">
+                       <p class="reusable-container--b-margin reusable-container__a-underline"><a href="" class="reusable-container--a__b-color ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</a> </p>
+                    <div class="reusable-container__icons">
+                      <ul>
+                        <li class="reusable-container__list-item--a-margin"> 
+                            <i class="fas fa-eye reusable-container__icons-b-color"></i>
+                            <h3 class="reusable-container__list-item--title" class="reusable-container__list-item--link">views</h3>
+                            <a href="" class="reusable-container__list-item--link">11111111</a>
+                        </li>
+                        <li class="reusable-container__list-item--a-margin">
+                            <i class="far fa-comments reusable-container__icons-b-color"></i>
+                            <h3 class="reusable-container__list-item--title">comment</h3>
+                            <a href="" class="reusable-container__list-item--link">11111111</a>
+                        </li>
+                         <li class="reusable-container__list-item--a-margin">    
+                            <i class="far fa-meh reusable-container__icons-b-color"></i>
+                            <h3 class="reusable-container__list-item--title">Helpful</h3>
+                            <a href="" class="reusable-container__list-item--link">11111111 </a>
+                         </li>
+                       </ul>
+                       
+                    </div>
+                   </div> 
+                   
+                    <div class="reusable-container reusable-container__icons--gray reusable-container--b-margin__content">
+                       <p class="reusable-container--b-margin reusable-container__a-underline" ><a href="" class="reusable-container--a__b-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</a> </p>
+                    <div class="reusable-container__icons">
+                      <ul>
+                        <li class="reusable-container__list-item--a-margin"> 
+                            <i class="fas fa-eye reusable-container__icons-b-color"></i>
+                            <h3 class="reusable-container__list-item--title" class="reusable-container__list-item--link">views</h3>
+                            <a href="" class="reusable-container__list-item--link">11111111</a>
+                        </li>
+                        <li class="reusable-container__list-item--a-margin">
+                            <i class="far fa-comments reusable-container__icons-b-color"></i>
+                            <h3 class="reusable-container__list-item--title">comment</h3>
+                            <a href="" class="reusable-container__list-item--link">11111111</a>
+                        </li>
+                         <li class="reusable-container__list-item--a-margin">    
+                            <i class="far fa-meh reusable-container__icons-b-color"></i>
+                            <h3 class="reusable-container__list-item--title">Helpful</h3>
+                            <a href="" class="reusable-container__list-item--link">11111111</a>
+                         </li>
+                       </ul>
+                       
+                    </div>
+                   </div> 
+                   
+                   <div class="reusable-container reusable-container__icons--gray reusable-container--b-margin__content">
+                       <p class="reusable-container--b-margin reusable-container__a-underline"><a href="" class="reusable-container--a__b-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</a> </p>
+                    <div class="reusable-container__icons">
+                      <ul>
+                        <li class="reusable-container__list-item--a-margin"> 
+                            <i class="fas fa-eye reusable-container__icons-b-color"></i>
+                            <h3 class="reusable-container__list-item--title" class="reusable-container__list-item--link">views</h3>
+                            <a href="" class="reusable-container__list-item--link">11111111</a>
+                        </li>
+                        <li class="reusable-container__list-item--a-margin">
+                            <i class="far fa-comments reusable-container__icons-b-color"></i>
+                            <h3 class="reusable-container__list-item--title">comment</h3>
+                            <a href="" class="reusable-container__list-item--link">11111111</a>
+                        </li>
+                         <li class="reusable-container__list-item--a-margin">    
+                            <i class="far fa-meh reusable-container__icons-b-color"></i>
+                            <h3 class="reusable-container__list-item--title">Helpful</h3>
+                             <a href="" class="reusable-container__list-item--link">11111111</a>
+                         </li>
+                       </ul>
+                       
+                    </div>
+                   </div> 
+                    
+                </div>
+                <div  class="row__large-4">
+                   <div class="reusable-container reusable-container--t-margin reusable-container--t-padding">
+                      
+                       <form action="" method="post" class="form-control">
+                        <input type="text" class="form-control__form-group form-control__padding-medium form-control__form-width--large">
+                        <span class="form-control__form-title">search question here.....</span>
+                        <div class="form-control__form-submit">
+                            <a href="" class="btn btn--padding-small"><i class="fas fa-search"></i></a>
+                        </div>
+                      </form>
+
+                   
+                    <h2 class="section-title section-title--t-margin section-title--blue section-title--w-color"><i class="fas fa-bullhorn section-title__icon"></i><strong>Upcoming</strong></h2>
+                    <div class="section-items section-items__page-section">
+                        <h3 class="section-items__title section-items--t-padding"><i class="fas fa-hourglass-start fa-spin section-items__icon reusable-container__icons-r-margin"></i>monthly quiz</h3>
+                        <p class="reusable-container--text-center reusable-container--no-margin">Exam is free, don''t miss it</p>
+                    <div class="reusable-container__icons reusable-container__icons--center">
+<!--
+                       <ul class="reusable-container__list--center">
+                        <li class="reusable-container__list-item--center"> 
+                        <i class="far fa-clock reusable-container__icons-r-color"></i>
+                        <h3 class="reusable-container__list-item--title">time:</h3>
+                        <a href="">11:22</a>
+                        </li>
+                        <li class="reusable-container__list-item--center"> 
+                        <i class="far fa-calendar reusable-container__icons-r-color"></i>
+                        <h3 class="reusable-container__list-item--title">Date:</h3>
+                        <a href="">11/2/22</a>
+                        </li>
+                       </ul>
+-->
+                    </div>
+                     <form action="" class="form-control form-control--t-margin">
+                         <select name="change time zone" id="" class="form-control__form-group form-control__padding-small  form-control__form-width--smaller" >
+                             <option >change time zone</option>
+                         </select>
+                     </form>
+                    </div>
+<!--                        <img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/userRank-small.jpg 565w, assets/images/userRank-medium.jpg 976w, assets/images/userRank-large.jpg 1952w" alt="Couple walking down a street." class="">-->
+                        <div class="page-section__userRank section-itemss__bg--image section-items--t-padding section-items--tb-margin section-items__page-section">
+                            <h2 class="section-title section-items--t-padding section-title--w-color">Tips To Increase your rank</h2>
+                            <p class="reusable-container--text-center reusable-container__icons-y-color reusable-container--no-margin">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star "></i>
+                                
+                            </p>  
+                           
+                            <p class="reusable-container--l-margin reusable-container__a-underline"><a href="" class="reusable-container__icons-y-color">• Answer questions, upload questions</a></p>
+                            <p class="reusable-container--l-margin reusable-container__a-underline"><a href="" class="reusable-container__icons-y-color">• Post News and Comments</a></p>
+                            <p class="reusable-container--l-margin reusable-container__icons-y-color"><span class="reusable-container__a-underline"><a href="" class="reusable-container__icons-y-color">• Participate in Exams </a></span></p>
+                         
+                           
+                        </div>
+
+                    <h3 class="section-items__title section-title--black-color"><i class="fas fa-star reusable-container__icons--color reusable-container__icons-r-margin"></i><span class="reusable-container__b-font section-title--black-color">benefits of star for SG24 scholars</span> </h3>
+                   
+                    <ul class="reusable-container--list-no__float">
+                        <li class="reusable-container__list-item--a-margin reusable-container__list-item--a-margin-large reusable-container--list-no__float"><i class="fas fa-shopping-cart reusable-container__icons-r-margin reusable-container__icons-b-color "></i>free Access to upload products to the store</li>
+                        <li class="reusable-container__list-item--a-margin reusable-container__list-item--a-margin-large reusable-container--list-no__float"><i class="fas fa-cogs reusable-container__icons-r-margin reusable-container__icons-b-color"></i> Access to personnal portal</li>
+                        <li class="reusable-container__list-item--a-margin reusable-container__list-item--a-margin-large reusable-container--list-no__float"><i class="far fa-hourglass reusable-container__icons-r-margin reusable-container__icons-b-color"></i> Set questions for the weeek,monthly exams and followers</li>
+                        <li class="reusable-container__list-item--a-margin reusable-container__list-item--a-margin-large reusable-container--list-no__float"><i class="fas fa-users reusable-container__icons-r-margin reusable-container__icons-b-color"></i> personnal Group chat with followers and more .....</li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+	    </div>
+	
+	</div>
+	
+	<div id="topTrend-news" class="page-section page-section--gray">
+        <div class="wrapper">
+           <div class="row">
+               <div class="row__large-12">
+                      <h2 class="section-title section-title--b-margin">Top Trending News</h2>
+                <div class="row row--gutters">
+                <div class="row__medium-4">
+                    <div class="feature-item">
+                        <img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/userRank-small.jpg 565w, assets/images/userRank-medium.jpg 976w, assets/images/userRank-large.jpg 1952w" alt="Couple walking down a street." class="">
+                         <h3 class="section-items__title">Lorem ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam! ...<a href="#"> view</a></p>
+                    <p></p>
+                     <div class="reusable-container__icons">
+                          <ul>
+                            <li class="reusable-container__list-item--a-margin"> 
+                                <i class="fas fa-eye reusable-container__icons-b-color"></i>
+                                <h3 class="reusable-container__list-item--title" class="reusable-container__list-item--link">views</h3>
+                                <a href="" class="reusable-container__list-item--link">11111111</a>
+                            </li>
+                            <li class="reusable-container__list-item--a-margin">
+                                <i class="far fa-comments reusable-container__icons-b-color"></i>
+                                <h3 class="reusable-container__list-item--title">comment</h3>
+                                <a href="" class="reusable-container__list-item--link">11111111</a>
+                            </li>
+                             <li class="reusable-container__list-item--a-margin">    
+                                <i class="far fa-heart reusable-container__icons-b-color"></i>
+                                <h3 class="reusable-container__list-item--title">Helpful</h3>
+                                <a href="" class="reusable-container__list-item--link">11111111</a>
+                             </li>
+                         </ul>   
+                    </div>
+                    </div>
+                   
+                </div>
+                <div class="row__medium-4">
+                    <img src="assets/images/userRank-large.jpg">
+                    <h3>Lorem ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</p>
+                    <p>...<a href="#"> view</a></p>
+                     <div class="reusable-container__icons">
+                          <ul>
+                            <li class="reusable-container__list-item--a-margin"> 
+                                <i class="fas fa-eye reusable-container__icons-b-color"></i>
+                                <h3 class="reusable-container__list-item--title" class="reusable-container__list-item--link">views</h3>
+                                <a href="" class="reusable-container__list-item--link">11111111</a>
+                            </li>
+                            <li class="reusable-container__list-item--a-margin">
+                                <i class="far fa-comments reusable-container__icons-b-color"></i>
+                                <h3 class="reusable-container__list-item--title">comment</h3>
+                                <a href="" class="reusable-container__list-item--link">11111111</a>
+                            </li>
+                             <li class="reusable-container__list-item--a-margin">    
+                                <i class="far fa-heart reusable-container__icons-b-color"></i>
+                                <h3 class="reusable-container__list-item--title">Helpful</h3>
+                                <a href="" class="reusable-container__list-item--link">11111111</a>
+                             </li>
+                         </ul>   
+                    </div>
+                </div>
+                
+                <div class="row__medium-4">
+                    <img src="assets/images/userRank-large.jpg">
+                    <h3>Lorem ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</p>
+                    <p>...<a href="#"> view</a></p>
+                     <div class="reusable-container__icons">
+                          <ul>
+                            <li class="reusable-container__list-item--a-margin"> 
+                                <i class="fas fa-eye reusable-container__icons-b-color"></i>
+                                <h3 class="reusable-container__list-item--title" class="reusable-container__list-item--link">views</h3>
+                                <a href="" class="reusable-container__list-item--link">11111111</a>
+                            </li>
+                            <li class="reusable-container__list-item--a-margin">
+                                <i class="far fa-comments reusable-container__icons-b-color"></i>
+                                <h3 class="reusable-container__list-item--title">comment</h3>
+                                <a href="" class="reusable-container__list-item--link">11111111</a>
+                            </li>
+                             <li class="reusable-container__list-item--a-margin">    
+                                <i class="far fa-heart reusable-container__icons-b-color"></i>
+                                <h3 class="reusable-container__list-item--title">Helpful</h3>
+                                <a href="" class="reusable-container__list-item--link">11111111</a>
+                             </li>
+                         </ul>   
+                    </div>
+                </div>
+               </div>
              </div>
-		</div>
-	</div>
-	
-	<div id="our-latest">
-		<ul>
-			<li>Recent Questions</li>
-			<li>Upcoming Events</li>
-			<li>Latest News</li>
-			<li>Tips and Tricks</li>
-		</ul>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</p>
-		<p>...<a href="#"> view</a></p>
-		
-		<i class="fas fa-eye"></i>
-		<h3>views:</h3>
-		<a href="">11111111</a>
-		
-		<i class="fas fa-comments-o"></i>
-		<h3>commentt:</h3>
-		<a href="">11111111</a>
-		
-		<i class="fas fa-chain-broken"></i>
-		<h3>views:</h3>
-		<a href="">11111111</a>
-		
-		<div id="advert-block">
-			<form action="" method="post">
-				<input type="text">
-				<p>search question here.....</p>
-			</form>
-			
-			<h2><i class="fas fa-bullhorn"></i>Upcoming</h2>
-			<h3>monthly quiz</h3>
-			<p>Exam is free, don''t miss the time</p>
-			
-			<i class="fas fa-chain-broken"></i>
-			<h3>Date:</h3>
-			<a href="">11/2/22/a>
-			
-			<i class="fas fa-chain-broken"></i>
-			<h3>Time:</h3>
-			<a href="">22:22 GMT</a>
-			
-			<a href="">chanhe time zone</a>
-			<a href="">Login</a>
-			
-			
-			<h2>Tis To Increase your ranck</h2>
-			<ul>
-				<li><a href="">Answer questions, upload questions</a></li>
-				<li><a href="">Add new</a></li>
-				<li><a href="">Participate in Exams</a></li>
-			</ul>
-			
-			<h2>benefits of star </h2>
-			<h3>Your star is your rank </h3>
-			<i class="far fa-star"></i>
-			<ul>
-				<li>free Access to upload products to the store</li>
-				<li>Access to personnal portal</li>
-				<li>Set questions for the weeek,monthly exams</li>
-				<li>personnal Group chat with followers</li>
-				<li>and more .....</li>
-			</ul>
-		</div>
-	</div>
-	
-	<div id="topTrend-news">
-		<h2>Top Trending News</h2>
-		<img src="">
-		<h3>Lorem ipsum dolor.</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</p>
-		<p>...<a href="#"> view</a></p>
-		
-		<i class="fas fa-eye"></i>
-		<h3>views:</h3>
-		<a href="">11111111</a>
-		
-		<i class="far fa-comments"></i>
-		<h3>commentt:</h3>
-		<a href="">11111111</a>
-		
-		<i class="far fa-heart"></i>
-		<h3>views:</h3>
-		<a href="">11111111</a>
-		
-		<img src="">
-		<h3>Lorem ipsum dolor.</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</p>
-		<p>...<a href="#"> view</a></p>
-		
-		<i class="fas fa-eye"></i>
-		<h3>views:</h3>
-		<a href="">11111111</a>
-		
-		<i class="far fa-comments"></i>
-		<h3>commentt:</h3>
-		<a href="">11111111</a>
-		
-		<i class="far fa-heart"></i>
-		<h3>views:</h3>
-		<a href="">11111111</a>
+           </div>
+
+        </div>
 	</div>
 	
 	<div id="upcoming-events">
@@ -241,8 +420,71 @@
 		
 		<p>Copyight &copy; 2018 by Agile Web dev <a href="#">Contact Us</a></p>
 	</footer>
+	<div class="owl-carousel owl-theme">
+    <div class="item"><h4>1</h4></div>
+    <div class="item"><h4>2</h4></div>
+    <div class="item"><h4>3</h4></div>
+    <div class="item"><h4>4</h4></div>
+    <div class="item"><h4>5</h4></div>
+    <div class="item"><h4>6</h4></div>
+    <div class="item"><h4>7</h4></div>
+    <div class="item"><h4>8</h4></div>
+    <div class="item"><h4>9</h4></div>
+    <div class="item"><h4>10</h4></div>
+    <div class="item"><h4>11</h4></div>
+    <div class="item"><h4>12</h4></div>
+</div>
+
+<a class="customNextBtn btn">next</a>
+<a class="customPrevBtn btn">next</a>
 </body>
 </html>
 
-
+<style>
+    .item{
+        width: 200px;
+        height: 200px;
+        background: red;
+        margin: 0 auto;
+    }
+</style>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+navText: false,
+//    slideBy: 2,
+    autoplay: true,
+//    autoplayTimeout: 1000,
+//    autoplayHoverPause: true,
+//    smartSpeed: 500,
+//    autoplaySpeed: true,
+    animateOut: true,
+    animateIn: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+    
+var owl = $('.owl-carousel');
+owl.owlCarousel();
+$('.customNextBtn').click(function() {
+    owl.trigger('next.owl.carousel');
+})
+// Go to the previous item
+$('.customPrevBtn').click(function() {
+    // With optional speed parameter
+    // Parameters has to be in square bracket '[]'
+    owl.trigger('prev.owl.carousel', [300]);
+})
+</script>
 

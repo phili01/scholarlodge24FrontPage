@@ -1,0 +1,30 @@
+@define-mixin atSmall {
+	@media (min-width: 530px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atMedium {
+	@media (min-width: 800px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atLarge {
+	@media (min-width: 1010px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin clearfix {
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
+
+
+@define-mixin border {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.13);
+}

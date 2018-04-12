@@ -1,0 +1,67 @@
+.hero-section {
+    
+    position: relative;
+    
+    &__image {
+        display: block;
+    }
+    
+    &__text-content {
+        padding-top: 30px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        text-align: center;
+        @mixin atMedium {
+            padding-top: 40px;
+        }
+    }
+    
+    &__title {
+        color: $mainBlue;
+        font-weight: 500;
+/*        color: $mainBlack;*/
+        margin: 0;
+        font-size: 1.3rem;
+        
+        @mixin atSmall {
+            font-size: 3rem
+        }
+    }
+    
+    &__subtitle {
+        font-weight: 300;
+        color: $mainBlack;
+        font-size: 0.75rem;
+            
+        @mixin atSmall {
+            font-size: 1.5rem;
+        }
+    }
+    
+    &__description {
+        color: #fff;
+        font-size: 0.9rem;
+        font-weight: 400;
+        text-shadow: 2px 2px 1px rgba(0,0,0,.4);
+        @mixin atSmall {
+            font-weight: 300;
+            font-size: 1.5rem;
+        }
+    }
+    
+    &__btn-container { 
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        
+        @mixin atSmall {
+           width: 100%;
+        }
+    }
+    
+}
+
+

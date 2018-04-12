@@ -1,0 +1,16 @@
+.page-section {
+    padding: 1.563rem 0;
+    
+    @mixin atMedium {
+        padding: 3.125rem 0;
+    }
+    
+    &__userRank {
+         background-color: $mainBlue;
+    }
+    
+    &--gray {
+        background-color: $mainGray;
+        color: $mainBlack;
+    }
+}

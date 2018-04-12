@@ -1,0 +1,39 @@
+.tab {
+   
+    
+    ul {
+		margin: 0 0 0 2rem;
+		padding: 0 0;
+		@mixin clearfix
+	}
+	
+	li {
+		list-style: none;
+		float: left;
+		padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #666;
+	}
+	
+	a {
+		color: #fff;
+		font-weight: 300;
+		text-decoration: none;
+		display: block;
+		padding: 12px 0;
+	}
+    
+    &--bg-gray {
+        background-color: $mainGray;
+    }
+    
+    &__active {
+/*        background-color: #fff;*/
+        color: red;
+    }
+    
+    &--b-margin {
+        margin-bottom: 2rem;
+    }
+}
