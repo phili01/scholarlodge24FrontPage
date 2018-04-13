@@ -12,4 +12,5 @@
 @import "modules/_form-control";
 @import "modules/_section-title";
 @import "modules/_section-items";
-@import "modules/_feature-item"
+@import "modules/_feature-item";
+@import "modules/_list-item";

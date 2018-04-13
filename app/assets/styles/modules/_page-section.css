@@ -10,7 +10,8 @@
     }
     
     &--gray {
-        background-color: $mainGray;
+        background-color: rgba($mainGray,.8);
         color: $mainBlack;
     }
+
 }

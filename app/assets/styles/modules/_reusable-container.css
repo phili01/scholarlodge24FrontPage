@@ -1,7 +1,6 @@
 .reusable-container {
 	position: relative;
     padding-top: 10px;
-    
     @mixin atSmall {
         padding: 10px;
         border-radius: 20px;
@@ -18,9 +17,20 @@
         }
     }
     
+    &--t-margin-small {
+        margin: 7px 0 0 0;
+    }
+    
+    &--no-border {
+        border: none;
+    }
     &__icons--gray {
-        border: none;   
-        @mixin border;
+
+        @mixin atSmall {
+            border: none; 
+            @mixin border;
+        }  
+        
     }
     
     &--t-padding {
@@ -29,6 +39,10 @@
         @mixin atLarge {
             padding-top: 30px;
         }
+    }
+    
+    &--t-padding-small {
+        padding-top: 20px;
     }
     
     &--l-margin{
@@ -48,11 +62,26 @@
         margin: 0 0 1.8rem 0;
     }
     
+    &--b-margin-small {
+        margin: 0 0 0.5rem 0;
+    }
+    
     &--no-margin {
         margin: 0 0 0 0;
     }
     
-	a {
+    &--i-display {
+        display: inline;
+    }
+    
+   
+    &--bg-color {
+        background-color: $mainBlue;
+        color: #fff !important;
+        padding: 5px
+    }
+    
+	 a {
 		font-weight: 400;
 /*		color: $mainBlack;*/
         text-decoration: none;
@@ -60,11 +89,15 @@
 	}
     
      &__a-underline {
-        text-decoration: underline;
+/*        text-decoration: underline;*/
     }
     
     &--a__b-color{
         color: $mainBlack;
+    }
+    
+    &--a__w-color{
+        color: #fff !important;
     }
     
      &__viewall {
@@ -154,6 +187,7 @@
     &__icons-g-color {
         color: $mainGray;
     }
+    
     
     
     &__list-item--title{
