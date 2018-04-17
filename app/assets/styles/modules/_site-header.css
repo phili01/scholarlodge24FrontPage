@@ -1,0 +1,133 @@
+.site-header {
+
+    border-top: 2px solid $mainRed;
+    padding-top: 20px;
+   
+    &__seo-container {
+     
+	}
+
+    &__form-container {
+        margin: 0 auto;
+        padding-top: 0px;
+        
+        @mixin atMedium {
+            padding-top: 20px;
+        }
+    }
+    
+	&__btn-container {
+       text-align: center;
+        padding-top: 20px;
+        
+        @mixin atLarge {
+            text-align: left
+        }
+	}
+    
+    &__filter-containier {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        
+        @mixin atMedium {
+            margin: 5px 0;
+            padding: 0;
+        }
+    }
+    
+    &__logo {
+        
+        position: relative;
+        transform: scale(.7);
+        transform-origin: 50% 0%;
+        left: -12%;
+
+		@mixin atMedium {
+			left: auto;
+			transform: translateX(0);
+            position: relative;
+            padding: 0;
+		}
+        overflow: hidden;
+        margin: 0 auto;
+        
+        
+        @mixin atLarge {
+            padding-right: 40px;
+        }
+    }
+	
+	&__logo__graphic {
+/*		text-indent: -9999px;*/
+	}
+    
+    &__menu-icon {
+		width: 20px;
+		height: 20px;
+		background-color: $mainRed;
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		
+		@mixin atMedium {
+			display: none;
+		}
+	}
+    
+    &__menu-content {
+		display: none;
+		
+		@mixin atMedium {
+			display: block;
+		}
+	}
+    
+    &__l-margin {
+        margin-left: 2px;
+        line-height: .9;
+        font-size: .7rem;
+        
+        @mixin atSmall {
+            margin-left: 25px;
+            font-size: 1rem;
+        }
+    }
+    
+     &__r-margin {
+         margin-right: 25px; 
+         
+         @mixin atSmall {
+           margin-right: auto;  
+         }
+    }
+    
+    &__i-block {
+        @mixin atSmall {
+            display: inline;
+        }
+    }
+    
+    &__content--center {
+        text-align: center;
+        display: block;
+        font-size: .7rem;
+        margin-bottom: 0;
+        margin-top: 15px;
+        
+        @mixin atSmall {
+            display: none;
+        }
+    }
+    
+    &__content--center--medium {
+        display: none;
+        font-weight: 300;
+        color: $mainBlack;
+    
+        @mixin atSmall {
+            display: block;
+        }
+    }
+    
+}

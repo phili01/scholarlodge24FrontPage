@@ -1,0 +1,48 @@
+.primary-nav {
+	display: flex;
+    justify-content: center;
+	display: inline-block;
+    margin-top: 20px;
+    
+	&--pull-right {
+/*		float: right;*/
+	}
+    
+    &--blue {
+        background-color: $mainBlue;
+    }
+    
+    &--padding-all {
+        padding: 5px 0px;
+        
+        
+        @mixin atLarge {
+            padding: 5px 0px;
+        }
+    }
+	
+	ul {
+        display: flex;
+        justify-content: center;
+        
+	}
+	
+	li {
+		list-style: none;
+		float: left;
+		padding-right: 24px;
+        
+        @mixin atLarge {
+            padding-right: 40px;
+        }
+	}
+	
+    a {
+        font-size: .9rem;
+        
+        @mixin atLarge {
+            font-size: 1rem;
+        }
+    }
+
+}

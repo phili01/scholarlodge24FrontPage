@@ -1,0 +1,44 @@
+.testimonial {
+    
+    position: relative;
+	padding-bottom: 1rem;
+	 margin-top: 50px;
+    
+	@mixin atSmall {
+		padding-left: 94px;
+	}
+    
+    &__img {
+        display: block;
+		margin: 0 auto;
+        border-radius: 40px;
+		overflow: hidden;
+		width: 80px;
+		height: 80px;
+        margin-bottom: 10px;
+        
+		border: 5px solid rgba($mainBlack, .2);
+		@mixin atSmall {
+			position: absolute;
+			left: 0;
+		}
+		
+    }
+    
+    &__title {
+		color: $mainBlue;
+		text-align: center;
+		font-size: .9rem;
+		font-weight: 400;
+		margin: 0px  0 10px 0;
+        
+        @mixin atSmall {
+            text-align: left;
+           font-size: 1.1rem; 
+        }
+	}
+    
+    &__font-style {
+        font-style: italic;
+    }
+}

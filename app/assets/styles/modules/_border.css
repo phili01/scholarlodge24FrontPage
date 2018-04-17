@@ -1,0 +1,81 @@
+.border {
+    
+    position: relative;
+    
+    &--right {
+        text-align: center !important;
+        border-top: 2px solid $mainBlue; 
+        border-bottom: 2px solid $mainBlue; 
+        padding: 10px 0; 
+        
+        @mixin atLarge {
+            padding: 0;
+            border: none;
+            border-right: 3px solid $mainBlue; 
+        }
+    }
+    
+    &--l-padding {
+        padding: 10px 0; 
+        @mixin atLarge {
+            padding: 0;
+            padding-left: 60px;
+        }
+    }  
+    
+    &--small-padding{
+        
+        @mixin atLarge {
+            position: absolute;
+            transform: translateX(40%)
+        }
+    }
+    
+    &--left {
+        text-align: center !important;
+        
+        @mixin atLarge {
+            border-left: 3px solid $mainBlue; 
+        }
+    }
+    
+    &--all {
+         @mixin border;
+        border-radius: 5px;
+    }
+    
+    &--medium {
+        border: 2px solid $mainGray;
+        border-radius: 5px;
+    }
+    
+    &--half-radius {
+        @mixin border;
+        border-radius: 0px 0px 5px 5px; 
+    } 
+    
+    &--top {
+        border-top: 1px solid $mainGray;
+    }
+    &--center { 
+        text-align: center;
+    }
+    
+    &--white { 
+         text-align: center !important;
+        border-top: 2px solid #fff; 
+        border-bottom: 2px solid #fff; 
+        padding: 10px 0; 
+        
+        @mixin atSmall {
+            padding: 0;
+            border: none;
+        }
+    }
+    
+    &--b-margin {
+        margin-bottom: 10px;
+    }
+    
+    
+}

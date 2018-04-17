@@ -1,0 +1,55 @@
+.headline {
+    
+    background-color: rgba($mainGray, 0.7);
+    padding: 5px 0 10px 0;
+    margin: 20px 0 0 0;
+    
+    
+    &--center {
+        text-align: center;
+    }
+    
+    &__title {
+        font-size: 1.2rem; 
+        font-weight: 400;
+
+        
+        @mixin atSmall {
+           font-size: 1.6rem;  
+        }
+    }
+    
+    &__subtitle {
+        font-weight: 400;
+        margin-bottom: 0;
+        font-size: 1rem;
+        color: #fff;
+        text-shadow: 0px 0px 2px $mainBlack;
+        
+        @mixin atSmall {
+         font-size: 1.5rem;
+        }
+    }
+    
+    &__time-left {
+        font-weight: 500;
+    }
+    
+    &--blue {
+        color: $mainBlue;
+    }
+    
+    &--red {
+       color: $mainRed;
+    }
+    
+    &--gray {
+        color: $mainGray;
+    }
+    
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+}

@@ -1,0 +1,83 @@
+.link {
+    
+    a {
+        text-decoration: none; 
+    }
+
+    
+    &__m-size-link {
+        font-size: .8rem;
+        font-style: italic;
+    }
+    
+     &__l-size-link {
+        font-size: .9rem;
+         font-weight: 300;
+    }
+    
+    &--blue {
+        color: $mainBlue;
+    }
+    &--red {
+        color: $mainRed;
+    }
+    &--black {
+        color: $mainBlack;
+    }
+    
+    &--white {
+        color: #fff;
+    }
+    
+    &--yellow {
+        color: yellow;
+    }
+    
+     &--r-margin {
+        margin-right: 10px;
+
+        @mixin atSmall {
+            margin-right: 30px;
+        }
+    }
+    
+     &--r-margin--small {
+        margin-right: 10px;
+
+        @mixin atSmall {
+            margin-right: 10px;
+        }
+    }
+    
+    
+     &--l-margin {
+        margin-left: 3px;
+/*         display: inline;*/
+
+        @mixin atMedium {
+            margin-left: 30px;
+        }
+    }
+    
+    &--b-padding {
+       padding-bottom: 5px;
+    }
+    
+      &--b-margin {
+        margin-bottom: 10px;
+
+        @mixin atSmall {
+            margin-bottom: 0;
+        }
+    }
+    
+    &--b-display {
+        display: block;
+        
+        @mixin atSmall{
+           display: inline; 
+        }
+    }
+
+    
+}

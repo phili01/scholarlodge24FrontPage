@@ -1,0 +1,54 @@
+
+.list-item {
+    
+  @mixin clearfix;
+    
+    ul {
+        margin:  0  0 20px 0;
+        padding: 0;
+        @mixin clearfix;
+        width: 100%;
+    }
+    
+    li {
+         list-style: none;
+        float: left;
+        padding: 20px 28px 0 0px;
+        font-size: 1rem;
+        font-style: italic;
+        
+        @mixin atSmall {
+           padding: 20px 30px 0 0px; 
+        }
+    }
+    
+    &--no-float > li {
+        float: none !important;
+    }
+    
+    &__dancing-font {
+        font-family: "Dancing Script";
+        color: $mainBlue;
+    }
+    
+    
+    &--no-l-padding {
+        
+        padding-left: 0;
+        
+        @mixin atSmall {
+            padding-left: 20px;
+        }
+  
+    }
+    
+    &--no-t-padding {
+        text-align: center;
+        
+    }
+    
+    &--text-center {
+        text-align: center ;
+    }
+    
+}

@@ -1,0 +1,21 @@
+.generic-question-container {
+	
+	p {
+		font-weight: 300;
+		line-height: 1.65;
+		margin: .4rem 0 1rem 0;
+        font-family: "Open Sans"; 
+		padding: .8rem 0 0 0 ;
+        
+		@mixin atSmall {
+			font-size: 1.1rem;
+		}
+	}
+	
+	p a {
+		font-weight: 600;
+		color: $mainBlack;
+        text-decoration: underline;
+	}
+	
+}

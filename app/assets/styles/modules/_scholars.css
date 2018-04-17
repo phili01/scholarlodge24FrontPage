@@ -1,0 +1,46 @@
+.scholars {
+    
+    padding: 20px 0;
+    margin-bottom: 30px;
+    
+    @mixin atSmall {
+        margin-bottom: 30px;
+    }
+    
+    &--center {
+        text-align: center;
+    }
+    
+    &--left {
+        text-align: left;
+    }
+    
+    &--right {
+        text-align: right;
+    }
+    
+    &__photo {
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    
+    &__title {
+       font-weight: 400;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        color: $mainBlue;
+        font-size: 1.4rem;
+    }
+    
+    &__subtitle {
+        margin-top: 10px;
+        margin-bottom: 20px !important;
+        
+    }
+    
+    
+    
+}
