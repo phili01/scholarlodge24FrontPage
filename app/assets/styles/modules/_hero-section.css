@@ -1,6 +1,11 @@
 .hero-section {
     
     position: relative;
+    border: 5px solid $mainGray;
+    
+    @mixin atMedium {
+        border-top: none;
+    }
     
     &__image {
         display: block;

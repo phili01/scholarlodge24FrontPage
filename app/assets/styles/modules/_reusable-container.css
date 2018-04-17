@@ -2,7 +2,7 @@
 	position: relative;
     padding-top: 10px;
     @mixin atSmall {
-        padding: 10px;
+        padding: 10px 10px 0 10px;
         border-radius: 20px;
     }
     
@@ -130,14 +130,6 @@
         padding-top: 10px;
     }
     
-    &__icons {
-        max-width: auto;
-        margin: 0 auto;
-    }
-    
-    &__icons-r-margin {
-        margin-right: 10px;
-    }
     
     ul {
         list-style: none;  
@@ -172,22 +164,7 @@
          }
     }
     
-    &__icons-r-color {
-        color: $mainRed;
-    }
-    
-    &__icons-y-color {
-        color: yellow;
-    }
-    
-     &__icons-b-color {
-        color: $mainBlue;
-    }
-    
-    &__icons-g-color {
-        color: $mainGray;
-    }
-    
+  
     
     
     &__list-item--title{

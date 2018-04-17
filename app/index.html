@@ -20,28 +20,64 @@
 <link rel="stylesheet" href="owl-slider/owlcarousel/assets/owl.theme.default.min.css">
  <script src="owl-slider/vendors/jquery.min.js"></script>
     <script src="owl-slider/owlcarousel/owl.carousel.js"></script>
+    
+      <!-- CSS stylesheet for jcSlider -->
+        <link rel="stylesheet" href="js-css/jcslider.css">
+        <!-- animate CSS stylesheet library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
 </head>
 <body>
-	<header>
-		<img src="assets/images/icons/logo.svg">
-		<a href="#">Sign Up</a>
-		<a href="#">Login</a>
-		<form method="post" action="">
-			<input type="text">
-			<p>add solution</p>
-			<i class="fas fa-search"></i>
-			<input type="submit" value="" name="">
-		</form>
-		<nav>
-			<li><i class="fas fa-home"></i>Home</li>
-			<li><i class="fas fa-hourglass-half"></i>Hot Seat</li>
-			<li><i class="fas fa-globe"></i>News</li>
-			<li><i class="fas fa-question"></i>Add Question</li>
-			<li><i class="fas fa-archive"></i>Study Materials</li>
-			<li><i class="fas fa-shopping-cart"></i>Store</li>
-			<li><i class="fas fa-users"></i>Chat Groups</li>
-			<li><i class="far fa-envelope"></i>Contact Us</li>
-		</nav>
+	<header class="site-header">
+	    <div class="wrapper">
+            <div class="row">
+                 <div class="row__medium-4--smaller site-header__logo">
+                <img src="assets/images/icons/logo.svg">
+    <!--	        scholorlodge 24-->
+            </div>
+            <div class="site-header__menu-icon"></div>
+            <div class="row__medium-8--larger">
+                <div class="site-header__form-container form-control form-control__width">
+                   <form method="post" action="">
+                    <input type="text" class="form-control__form-group form-control__padding-large form-control__form-width--large-input">
+                    <span class="form-control__input-description">looking for something........</span>
+                    <div class="form-control__submit--form">
+                    <i class="fas fa-search icon--r-color"></i>
+                    </div>
+                 </form> 
+                </div>  
+            </div>
+            <div class="row__medium-4--smaller site-header__btn-container site-header__menu-content">
+                    <a href="#" class="btn btn--small link--r-margin--small btn__padding--all">Sign Up</a>
+                    <a href="#" class="btn btn--small btn--white border--all btn__padding--all btn__font-weight">Login</a>
+                </div>
+            </div>
+            <p class="site-header__content--center"><i class="fas fa-filter icon--r-color icon--r-margin"></i>Search Filter:</p>
+            <div class="site-header__filter-containier">
+              <span class="site-header__content--center--medium"><i class="fas fa-filter icon--r-color icon--r-margin"></i>Search Filter:</span>
+               <div class="">
+                   <p class="site-header__l-margin site-header__r-margin site-header__i-block">All <input type="checkbox" class="form-control__l-margin"> </p>
+                   <p class="site-header__l-margin site-header__r-margin site-header__i-block"> Question <input type="checkbox" class="form-control__l-margin"> </p>
+               </div>
+               <div class="">
+                   <p class="site-header__l-margin site-header__r-margin site-header__i-block">News <input type="checkbox" class="form-control__l-margin"> </p>
+                   <p class="site-header__l-margin site-header__r-margin site-header__i-block">  Blog<input type="checkbox" class="form-control__l-margin"> </p>
+               </div>
+               
+            </div>
+	    </div>
+	<div class="site-header__menu-content">
+            <nav class="primary-nav primary-nav--pull-right primary-nav--blue row__medium-12 primary-nav--padding-all">
+                <ul class="link">
+                     <li><a href="" class="link--white link--nav-link"><i class="fas fa-home icon--r-margin icon--y-color"></i>Home</a></li>
+                    <li><a href="" class="link--white link--nav-link"><i class="fas fa-hourglass-half icon--r-margin icon--y-color"></i>Hot Seat <i class="fas fa-caret-right"></i></a></li>
+                    <li><a href="" class="link--white link--nav-link"><i class="fas fa-globe fa-pulse icon--r-margin icon--y-color "></i>News <i class="fas fa-caret-right"></i> </a></li>
+                    <li><a href="" class="link--white link--nav-link"><i class="fas fa-question icon--r-margin icon--y-color"></i>Add Question</a></li>
+                    <li><a href="" class="link--white link--nav-link"><i class="fas fa-shopping-cart icon--r-margin icon--y-color"></i>Store</a></li>
+                    <li><a href="" class="link--white link--nav-link"><i class="fas fa-users icon--r-margin icon--y-color"></i>Chat Groups <i class="fas fa-caret-right"></i></a></li>
+                    <li><a href="" class="link--white link--nav-link"><i class="fas fa-envelope icon--r-margin icon--y-color"></i>Contact Us</a></li>
+                </ul>
+            </nav>
+      </div>
 	</header>
 	
 	<div class="hero-section">
@@ -77,106 +113,81 @@
                       </ul>
                    </div>
                    
-                    <div class="reusable-container reusable-container__icons--gray reusable-container--b-margin__content">
-                       <p class="reusable-container--b-margin reusable-container__a-underline"><a href="" class="reusable-container--a__b-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</a> </p>
-                    <div class="reusable-container__icons">
-                       <ul>
-                        <li class="reusable-container__list-item--a-margin"> 
-                            <i class="fas fa-eye reusable-container__icons-b-color"></i>
-                            <h3 class="reusable-container__list-item--title">views</h3>
-                            <a href="" class="reusable-container__list-item--link">11111111</a>
-                        </li>
-                        <li class="reusable-container__list-item--a-margin">
-                            <i class="far fa-comments reusable-container__icons-b-color"></i>
-                            <h3 class="reusable-container__list-item--title">comment</h3>
-                            <a href="" class="reusable-container__list-item--link">11111111</a>
-                        </li>
-                         <li class="reusable-container__list-item--a-margin">    
-                            <i class="far fa-meh reusable-container__icons-b-color"></i>
-                            <h3 class="reusable-container__list-item--title">Helpful</h3>
-                            <a href="" class="reusable-container__list-item--link">11111111</a>
-                         </li>
-                       </ul>
+                   <div class="feature-item generic-question-container link border--all">
+                       <p class=""><a href="" class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</a> <span class="link--l-margin link--blue link__l-size-link   "><i class="far fa-clock icon--r-color "></i> <span class="link--black">12hrs ago</span></span></p> 
+                        
+                    <div class="section-items">
+       
+                            <a class="link--blue link__l-size-link link--r-margin link--b-display link--b-margin"><i class="fas fa-eye icon--b-color icon--r-margin"></i>views <span class="link--black">110K</span></a>
+                       
+                            <a class="link--blue link__l-size-link link--r-margin link--b-display link--b-margin"><i class="far fa-comments icon--b-color icon--r-margin"></i>Comments <span class="link--black">110K</span></a>
+                       
+                           <a class="link--blue link__l-size-link link--r-margin"><i class="far fa-meh icon--b-color icon--r-margin"></i>Useful <span class="link--black">110K</span></a>
                        
                     </div>
                    </div> 
                    
-                    <div class="reusable-container reusable-container__icons--gray reusable-container--b-margin__content">
-                       <p class="reusable-container--b-margin reusable-container__a-underline"><a href="" class="reusable-container--a__b-color ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</a> </p>
-                    <div class="reusable-container__icons">
-                      <ul>
-                        <li class="reusable-container__list-item--a-margin"> 
-                            <i class="fas fa-eye reusable-container__icons-b-color"></i>
-                            <h3 class="reusable-container__list-item--title" class="reusable-container__list-item--link">views</h3>
-                            <a href="" class="reusable-container__list-item--link">11111111</a>
-                        </li>
-                        <li class="reusable-container__list-item--a-margin">
-                            <i class="far fa-comments reusable-container__icons-b-color"></i>
-                            <h3 class="reusable-container__list-item--title">comment</h3>
-                            <a href="" class="reusable-container__list-item--link">11111111</a>
-                        </li>
-                         <li class="reusable-container__list-item--a-margin">    
-                            <i class="far fa-meh reusable-container__icons-b-color"></i>
-                            <h3 class="reusable-container__list-item--title">Helpful</h3>
-                            <a href="" class="reusable-container__list-item--link">11111111 </a>
-                         </li>
-                       </ul>
+                   <div class="feature-item generic-question-container link border--all">
+                       <p class=""><a href="" class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</a> <span class="link--l-margin link--blue link__l-size-link   "><i class="far fa-clock icon--r-color "></i> <span class="link--black">12hrs ago</span></span></p> 
+                        
+                    <div class="section-items">
+       
+                            <a class="link--blue link__l-size-link link--r-margin link--b-display link--b-margin"><i class="fas fa-eye icon--b-color icon--r-margin"></i>views <span class="link--black">110K</span></a>
+                       
+                            <a class="link--blue link__l-size-link link--r-margin link--b-display link--b-margin"><i class="far fa-comments icon--b-color icon--r-margin"></i>Comments <span class="link--black">110K</span></a>
+                       
+                           <a class="link--blue link__l-size-link link--r-margin"><i class="far fa-meh icon--b-color icon--r-margin"></i>Useful <span class="link--black">110K</span></a>
                        
                     </div>
                    </div> 
                    
-                    <div class="reusable-container reusable-container__icons--gray reusable-container--b-margin__content">
-                       <p class="reusable-container--b-margin reusable-container__a-underline" ><a href="" class="reusable-container--a__b-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</a> </p>
-                    <div class="reusable-container__icons">
-                      <ul>
-                        <li class="reusable-container__list-item--a-margin"> 
-                            <i class="fas fa-eye reusable-container__icons-b-color"></i>
-                            <h3 class="reusable-container__list-item--title" class="reusable-container__list-item--link">views</h3>
-                            <a href="" class="reusable-container__list-item--link">11111111</a>
-                        </li>
-                        <li class="reusable-container__list-item--a-margin">
-                            <i class="far fa-comments reusable-container__icons-b-color"></i>
-                            <h3 class="reusable-container__list-item--title">comment</h3>
-                            <a href="" class="reusable-container__list-item--link">11111111</a>
-                        </li>
-                         <li class="reusable-container__list-item--a-margin">    
-                            <i class="far fa-meh reusable-container__icons-b-color"></i>
-                            <h3 class="reusable-container__list-item--title">Helpful</h3>
-                            <a href="" class="reusable-container__list-item--link">11111111</a>
-                         </li>
-                       </ul>
+                   <div class="feature-item generic-question-container link border--all">
+                       <p class=""><a href="" class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</a> <span class="link--l-margin link--blue link__l-size-link   "><i class="far fa-clock icon--r-color "></i> <span class="link--black">12hrs ago</span></span></p> 
+                        
+                    <div class="section-items">
+       
+                            <a class="link--blue link__l-size-link link--r-margin link--b-display link--b-margin"><i class="fas fa-eye icon--b-color icon--r-margin"></i>views <span class="link--black">110K</span></a>
+                       
+                            <a class="link--blue link__l-size-link link--r-margin link--b-display link--b-margin"><i class="far fa-comments icon--b-color icon--r-margin"></i>Comments <span class="link--black">110K</span></a>
+                       
+                           <a class="link--blue link__l-size-link link--r-margin"><i class="far fa-meh icon--b-color icon--r-margin"></i>Useful <span class="link--black">110K</span></a>
                        
                     </div>
                    </div> 
                    
-                   <div class="reusable-container reusable-container__icons--gray reusable-container--b-margin__content">
-                       <p class="reusable-container--b-margin reusable-container__a-underline"><a href="" class="reusable-container--a__b-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</a> </p>
-                    <div class="reusable-container__icons">
-                      <ul>
-                        <li class="reusable-container__list-item--a-margin"> 
-                            <i class="fas fa-eye reusable-container__icons-b-color"></i>
-                            <h3 class="reusable-container__list-item--title" class="reusable-container__list-item--link">views</h3>
-                            <a href="" class="reusable-container__list-item--link">11111111</a>
-                        </li>
-                        <li class="reusable-container__list-item--a-margin">
-                            <i class="far fa-comments reusable-container__icons-b-color"></i>
-                            <h3 class="reusable-container__list-item--title">comment</h3>
-                            <a href="" class="reusable-container__list-item--link">11111111</a>
-                        </li>
-                         <li class="reusable-container__list-item--a-margin">    
-                            <i class="far fa-meh reusable-container__icons-b-color"></i>
-                            <h3 class="reusable-container__list-item--title">Helpful</h3>
-                             <a href="" class="reusable-container__list-item--link">11111111</a>
-                         </li>
-                       </ul>
+                   <div class="feature-item generic-question-container link border--all">
+                       <p class=""><a href="" class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</a> <span class="link--l-margin link--blue link__l-size-link   "><i class="far fa-clock icon--r-color "></i> <span class="link--black">12hrs ago</span></span></p> 
+                        
+                    <div class="section-items">
+       
+                            <a class="link--blue link__l-size-link link--r-margin link--b-display link--b-margin"><i class="fas fa-eye icon--b-color icon--r-margin"></i>views <span class="link--black">110K</span></a>
+                       
+                            <a class="link--blue link__l-size-link link--r-margin link--b-display link--b-margin"><i class="far fa-comments icon--b-color icon--r-margin"></i>Comments <span class="link--black">110K</span></a>
+                       
+                           <a class="link--blue link__l-size-link link--r-margin"><i class="far fa-meh icon--b-color icon--r-margin"></i>Useful <span class="link--black">110K</span></a>
                        
                     </div>
                    </div> 
-                    
+                   
+                    <div class="feature-item generic-question-container link border--all">
+                       <p class=""><a href="" class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis eveniet fugit temporibus nulla modi quae. Eum, fugit veniam totam blanditiis expedita numquam!</a> <span class="link--l-margin link--blue link__l-size-link   "><i class="far fa-clock icon--r-color "></i> <span class="link--black">12hrs ago</span></span></p> 
+                        
+                    <div class="section-items">
+       
+                            <a class="link--blue link__l-size-link link--r-margin link--b-display link--b-margin"><i class="fas fa-eye icon--b-color icon--r-margin"></i>views <span class="link--black">110K</span></a>
+                       
+                            <a class="link--blue link__l-size-link link--r-margin link--b-display link--b-margin"><i class="far fa-comments icon--b-color icon--r-margin"></i>Comments <span class="link--black">110K</span></a>
+                       
+                           <a class="link--blue link__l-size-link link--r-margin"><i class="far fa-meh icon--b-color icon--r-margin"></i>Useful <span class="link--black">110K</span></a>
+                       
+                    </div>
+                   </div> 
+                   
+                   
                 </div>
+                
                 <div  class="row__large-4">
-                   <div class="reusable-container reusable-container--t-margin reusable-container--t-padding">
-                      
+                   <div class="feature-item feature-item--border-small generic-content-container feature-item--t-padding feature-item--t-margin border--medium">
                        <form action="" method="post" class="form-control">
                         <input type="text" class="form-control__form-group form-control__padding-medium form-control__form-width--large">
                         <span class="form-control__form-title">search question here.....</span>
@@ -185,60 +196,76 @@
                         </div>
                       </form>
 
-                   
-                    <h2 class="section-title section-title--t-margin section-title--blue section-title--w-color"><i class="fas fa-bullhorn section-title__icon"></i><strong>Upcoming</strong></h2>
-                    <div class="section-items section-items__page-section">
-                        <h3 class="section-items__title section-items--t-padding"><i class="fas fa-hourglass-start fa-spin section-items__icon reusable-container__icons-r-margin"></i>monthly quiz</h3>
-                        <p class="reusable-container--text-center reusable-container--no-margin">Exam is free, don''t miss it</p>
-                    <div class="reusable-container__icons reusable-container__icons--center">
+                       <div class="headline headline--center link ">
+                      
+                    <h2 class="headline__title headline--blue"><strong>Upcoming</strong></h2>     
+                <ul class="jc-slider2">
+                    <li class="jc-animation">
+                        <div class="wrap">
+                           <h3 class="headline__subtitle ">monthly quiz</h3>
+                            <p class="headline--red">Exam is free, don''t miss it</p>
+                            <p><i class="fas fa-spinner fa-pulse icon--r-margin icon--b-color headline--center"></i>Time left <span class="headline__time-left">22hrs</span>
+                            <a href="" class="link--l-margin link--blue link--b-display">Start Now <i class="fas fa-arrow-right icon--l-margin icon--r-color headline--center"></i></a></p>
+                        </div>
+                    </li>
+                    <li class="jc-animation">
+                        <div class="wrap">
+                           <h3 class="headline__subtitle ">monthly quiz</h3>
+                            <p class="headline--red">Exam is free, don''t miss it</p>
+                            <p><i class="fas fa-spinner fa-pulse icon--r-margin icon--b-color headline--center"></i>Time left <span class="headline__time-left">22hrs</span>
+                            <a href="" class="link--l-margin link--blue link--b-display">Start Now <i class="fas fa-arrow-right icon--l-margin icon--r-color headline--center"></i></a></p>
+                        </div>
+                    </li>
+                    <li class="jc-animation">
+                        <div class="wrap">
+                           <h3 class="headline__subtitle ">monthly quiz</h3>
+                            <p class="headline--red">Exam is free, don''t miss it</p>
+                            <p><i class="fas fa-spinner fa-pulse icon--r-margin icon--b-color headline--center"></i>Time left <span class="headline__time-left">22hrs</span>
+                            <a href="" class="link--l-margin link--blue link--b-display">Start Now <i class="fas fa-arrow-right icon--l-margin icon--r-color headline--center"></i></a></p>
+                        </div>
+                    </li>
+                </ul>
+                           
+                           
+                           
 <!--
-                       <ul class="reusable-container__list--center">
-                        <li class="reusable-container__list-item--center"> 
-                        <i class="far fa-clock reusable-container__icons-r-color"></i>
-                        <h3 class="reusable-container__list-item--title">time:</h3>
-                        <a href="">11:22</a>
-                        </li>
-                        <li class="reusable-container__list-item--center"> 
-                        <i class="far fa-calendar reusable-container__icons-r-color"></i>
-                        <h3 class="reusable-container__list-item--title">Date:</h3>
-                        <a href="">11/2/22</a>
-                        </li>
-                       </ul>
+                           <h2 class="headline__title headline--blue"><strong>Upcoming</strong></h2>
+                       <div class="">
+                            <h3 class="headline__subtitle ">monthly quiz</h3>
+                            <p class="headline--red">Exam is free, don''t miss it</p>
+                            <p><i class="fas fa-spinner fa-pulse icon--r-margin icon--b-color headline--center"></i>Time left <span class="headline__time-left">22hrs</span>
+                            <a href="" class="link--l-margin link--blue link--b-display">Start Now <i class="fas fa-arrow-right icon--l-margin icon--r-color headline--center"></i></a></p>
+
+                        </div>
 -->
-                    </div>
-                     <form action="" class="form-control form-control--t-margin">
-                         <select name="change time zone" id="" class="form-control__form-group form-control__padding-small  form-control__form-width--smaller" >
-                             <option >change time zone</option>
-                         </select>
-                     </form>
-                    </div>
-<!--                        <img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/userRank-small.jpg 565w, assets/images/userRank-medium.jpg 976w, assets/images/userRank-large.jpg 1952w" alt="Couple walking down a street." class="">-->
-                        <div class="page-section__userRank section-itemss__bg--image section-items--t-padding section-items--tb-margin section-items__page-section">
-                            <h2 class="section-title section-items--t-padding section-title--w-color">Tips To Increase your rank</h2>
-                            <p class="reusable-container--text-center reusable-container__icons-y-color reusable-container--no-margin">
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star "></i>
+                        
+                       </div>
+                
+                        <div class="section-items section-items__bg-blue section-items--t-padding section-items--t-margin">
+                            <h2 class="section-items__title section-items__center section-items--white">Tips to increase your rank</h2>
+                            <p class="section-items__center section-items--yellow">
+                              <i class="fas fa-star fa-spin"></i>
+                              <i class="fas fa-star fa-spin"></i>
+                              <i class="fas fa-star fa-spin"></i>
+                              <i class="fas fa-star fa-spin"></i>
+                              <i class="fas fa-star fa-spin"></i>
+<!--                              <i class="fas fa-star fa-spin"></i>-->
                                 
                             </p>  
-                           
-                            <p class="reusable-container--l-margin reusable-container__a-underline"><a href="" class="reusable-container__icons-y-color">• Answer questions, upload questions</a></p>
-                            <p class="reusable-container--l-margin reusable-container__a-underline"><a href="" class="reusable-container__icons-y-color">• Post News and Comments</a></p>
-                            <p class="reusable-container--l-margin reusable-container__icons-y-color"><span class="reusable-container__a-underline"><a href="" class="reusable-container__icons-y-color">• Participate in Exams </a></span></p>
-                         
-                           
+                           <div class="section-items__center">
+                               <p class=""><a href="" class="link--white">• Answer questions, upload questions</a></p>
+                            <p class=""><a href="" class="link--white">• Post News and Comments</a></p>
+                            <p class=""><a href="" class="link--white">• Participate in Exams </a></p>
+                           </div> 
                         </div>
 
-                    <h3 class="section-items__title section-title--black-color"><i class="fas fa-star reusable-container__icons--color reusable-container__icons-r-margin"></i><span class="reusable-container__b-font section-title--black-color">benefits of star for SG24 scholars</span> </h3>
+                    <h3 class="section-items__sub-title"><i class="fas fa-star icon--r-color icon--r-margin"></i>benefits of rank for SG24 scholars <i class="fas fa-star icon--r-color icon--r-margin"></i> </h3>
                    
-                    <ul class="reusable-container--list-no__float">
-                        <li class="reusable-container__list-item--a-margin reusable-container__list-item--a-margin-large reusable-container--list-no__float"><i class="fas fa-shopping-cart reusable-container__icons-r-margin reusable-container__icons-b-color "></i>free Access to upload products to the store</li>
-                        <li class="reusable-container__list-item--a-margin reusable-container__list-item--a-margin-large reusable-container--list-no__float"><i class="fas fa-cogs reusable-container__icons-r-margin reusable-container__icons-b-color"></i> Access to personnal portal</li>
-                        <li class="reusable-container__list-item--a-margin reusable-container__list-item--a-margin-large reusable-container--list-no__float"><i class="far fa-hourglass reusable-container__icons-r-margin reusable-container__icons-b-color"></i> Set questions for the weeek,monthly exams and followers</li>
-                        <li class="reusable-container__list-item--a-margin reusable-container__list-item--a-margin-large reusable-container--list-no__float"><i class="fas fa-users reusable-container__icons-r-margin reusable-container__icons-b-color"></i> personnal Group chat with followers and more .....</li>
+                    <ul class="list-item list-item--no-float list-item--no-l-padding">
+                        <li class=""><i class="fas fa-shopping-cart icon--r-margin icon--b-color"></i>free Access to upload products to the store</li>
+                        <li class=""><i class="fas fa-cogs icon--r-margin icon--b-color"></i> Access to personnal portal</li>
+                        <li class=""><i class="far fa-hourglass icon--r-margin icon--b-color"></i> Set questions for the weeek,monthly exams and followers</li>
+                        <li class=""><i class="fas fa-users icon--r-margin icon--b-color"></i> personnal Group chat with followers and more .....</li>
                     </ul>
                    </div>
                 </div>
@@ -247,15 +274,14 @@
 	
 	</div>
 	
-	<div id="topTrend-news" class="page-section page-section--gray">
+	<div id="topTrend-news" class="page-section page-section--gray ">
         <div class="wrapper">
-           <div class="row">
-               <div class="row__large-12">
-                      <h2 class="section-title section-title--b-margin">Top Trending News</h2>
-                <div class="row row--gutters">
-                <div class="row__large-4">
-                    <div class="feature-item">
-                        <img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/userRank-small.jpg 565w, assets/images/userRank-medium.jpg 976w, assets/images/userRank-large.jpg 1952w" alt="Couple walking down a street.">
+           <div class="row owl-carousel owl-theme">
+               <div class="row__large-12 ">
+                      <h2 class="section-title section-title--b-margin section-title--blue"><i class="fas fa-heart icon--r-large-margin icon__position icon--r-color"></i>Top Trending News</h2>
+                <div class="row row--gutters ">
+                <div class="row__large-4 generic-content-container">
+                        <img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/hero--large.jpg 565w, assets/images/hero--large.jpg 976w, assets/images/hero--large.jpg 1952w" alt="Couple walking down a street.">
 <!--
                         <div >
                           <ul>
@@ -274,38 +300,36 @@
                          </ul>   
                     </div>
 -->
-                         <div class="list-item list">
+                        <div class="feature-item link border--half-radius">
+                         <div class="list-item">
                             <ul>
                             <li> 
-                                <a href="" class="list-item__dancing-font">
-                                <i class="fas fa-list list-item__icon--r-margin list-item__icon--color"></i>
-                                Entertainment</a>
+                                <a href="" class="list-item__dancing-font"> <i class="fas fa-list icon--r-margin icon--b-color"></i>Buisness</a>
                             </li>
                              <li >    
-                                <a href="" class="">
-                                <i class="far fa-clock list-item__icon--r-margin list-item__icon--color"></i>
+                                <a href="" class="link__m-size-link">
+                                 <i class="far fa-clock  icon--b-color"></i>
                                 12 hrs ago</a>
                              </li>
                          </ul> 
                      </div>
                            
-                    <div class="reusable-container reusable-container--no-border reusable-container--t-padding-small">
-                    <h3 class="section-items section-items__no-margin section-title--black-color section-items__no--bg-color">Lorem ipsum dolor.</h3>   
+                    <div class="section-items">
+                    <h3 class="section-items__title section-title--black-color section-items__no--bg-color">Lorem ipsum dolor.</h3>    
                     <p class="reusable-container--t-margin-small reusable-container--b-margin-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis ! </p>
                         
-                    <p style="display: inline; font-size: .8rem">
-                    <a href="" class="">
-                        <i class="far fa-user list-item__icon--r-margin list-item__icon--color"></i>
-                        by Admin</a</p>
-                         <p class="reusable-container--no-margin" style="display: inline; margin-left: 30px" ><a href="#" class="list-item__link">Read More
-                         <i class="fas fa-arrow-right list-item__icon--l-margin list-item__icon--color"></i>
-                         </a></p>
+                       <a href="" class="link--r-margin link__m-size-link link--red">
+                        <i class="far fa-user icon--r-margin icon--b-color"></i>
+                           by Admin</a>
+                           
+                         <a href="#" class="link--blue">Read More 
+                         <i class="fas fa-arrow-right icon--l-margin icon--r-color"></i></a>
                     </div>
                   </div>
                 </div>
-                      <div class="row__large-4">
-                    <div class="feature-item">
-                        <img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/userRank-small.jpg 565w, assets/images/userRank-medium.jpg 976w, assets/images/userRank-large.jpg 1952w" alt="Couple walking down a street.">
+                   
+                    <div class="row__large-4 generic-content-container">
+                        <img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/hero--large.jpg 565w, assets/images/hero--large.jpg 976w, assets/images/hero--large.jpg 1952w" alt="Couple walking down a street.">
 <!--
                         <div >
                           <ul>
@@ -324,38 +348,36 @@
                          </ul>   
                     </div>
 -->
-                         <div class="list-item list">
+                        <div class="feature-item link border--half-radius">
+                         <div class="list-item">
                             <ul>
                             <li> 
-                                <a href="" class="list-item__dancing-font">
-                                <i class="fas fa-list list-item__icon--r-margin list-item__icon--color"></i>
-                                Entertainment</a>
+                                <a href="" class="list-item__dancing-font"> <i class="fas fa-list icon--r-margin icon--b-color"></i>Buisness</a>
                             </li>
-                             <li >   
-                                <a href="" class="">
-                                <i class="far fa-clock list-item__icon--r-margin list-item__icon--color"></i>
+                             <li >    
+                                <a href="" class="link__m-size-link">
+                                 <i class="far fa-clock  icon--b-color"></i>
                                 12 hrs ago</a>
                              </li>
                          </ul> 
                      </div>
                            
-                    <div class="reusable-container reusable-container--no-border reusable-container--t-padding-small">
-                    <h3 class="section-items section-items__no-margin section-title--black-color section-items__no--bg-color">Lorem ipsum dolor.</h3>   
+                    <div class="section-items">
+                    <h3 class="section-items__title section-title--black-color section-items__no--bg-color">Lorem ipsum dolor.</h3>    
                     <p class="reusable-container--t-margin-small reusable-container--b-margin-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis ! </p>
                         
-                    <p class="reusable-container--i-display" style="font-size: .8rem">
-                       <a href="" class="">
-                        <i class="far fa-user list-item__icon--r-margin list-item__icon--color"></i>
-                        by Admin</a</p>
-                         <p class="reusable-container--no-margin reusable-container--i-display" style="margin-left: 30px" ><a href="#" class="list-item__link">Read More 
-                         <i class="fas fa-arrow-right list-item__icon--l-margin list-item__icon--color"></i></a></p>
+                       <a href="" class="link--r-margin link__m-size-link link--red">
+                        <i class="far fa-user icon--r-margin icon--b-color"></i>
+                           by Admin</a>
+                           
+                         <a href="#" class="link--blue">Read More 
+                         <i class="fas fa-arrow-right icon--l-margin icon--r-color"></i></a>
                     </div>
                   </div>
                 </div>
                 
-                      <div class="row__large-4">
-                    <div class="feature-item">
-                        <img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/userRank-small.jpg 565w, assets/images/userRank-medium.jpg 976w, assets/images/userRank-large.jpg 1952w" alt="Couple walking down a street.">
+                     <div class="row__large-4 generic-content-container">
+                        <img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/hero--large.jpg 565w, assets/images/hero--large.jpg 976w, assets/images/hero--large.jpg 1952w" alt="Couple walking down a street.">
 <!--
                         <div >
                           <ul>
@@ -374,34 +396,37 @@
                          </ul>   
                     </div>
 -->
-                         <div class="list-item list">
+                        <div class="feature-item link border--half-radius">
+                         <div class="list-item">
                             <ul>
                             <li> 
-                               
-                                <a href="" class="list-item__dancing-font"> <i class="fas fa-list list-item__icon--r-margin list-item__icon--color"></i>Buisness</a>
+                                <a href="" class="list-item__dancing-font"> <i class="fas fa-list icon--r-margin icon--b-color"></i>Buisness</a>
                             </li>
                              <li >    
-                                <a href="" class="">
-                                 <i class="far fa-clock list-item__icon--r-margin list-item__icon--color"></i>
+                                <a href="" class="link__m-size-link">
+                                 <i class="far fa-clock  icon--b-color"></i>
                                 12 hrs ago</a>
                              </li>
                          </ul> 
                      </div>
                            
-                    <div class="reusable-container reusable-container--no-border reusable-container--t-padding-small">
-                    <h3 class="section-items section-items__no-margin section-title--black-color section-items__no--bg-color">Lorem ipsum dolor.</h3>   
+                    <div class="section-items">
+                    <h3 class="section-items__title section-title--black-color section-items__no--bg-color">Lorem ipsum dolor.</h3>    
                     <p class="reusable-container--t-margin-small reusable-container--b-margin-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis deleniti eius, consequuntur nam quas, impedit cupiditate veritatis ! </p>
                         
-                    <p class="reusable-container--i-display"><i class="fas fa-shopping-cart list-item__icon--r-margin list-item__icon--color"></i>
-                    <a href="" class="list-item__link list-item__link--r-color">$9999</a</p>
+                       <a href="" class="link--r-margin link--red">
+                        <i class="fas fa-shopping-cart icon--r-margin icon--b-color"></i>
+                           $ 999</a>
+                           
+                         <a href="#" class="btn btn--small">Buy Now
+                         <i class="fas fa-arrow-right icon--l-margin icon--w-color"></i></a>
                         
-                         <p class="reusable-container--no-margin  reusable-container--i-display reusable-container--bg-color" style="margin-left: 30px" ><a href="#" class="list-item__link reusable-container--a__w-color">Buy Now</a></p>
-                         
-                         <p class="reusable-container--no-margin reusable-container--i-display reusable-container--b-display" style="margin-left: 20px;"><a href="#" class="list-item__link">Details</a></p>
+                         <a href="#" class="link--l-margin link__m-size">Details</a>
                          
                     </div>
                   </div>
                 </div>
+                      
                 
                </div>
              </div>
@@ -410,150 +435,300 @@
         </div>
 	</div>
 	
-	<div id="upcoming-events">
-		<h2><i class="fas fa-bullhorn"></i>Internal Events</h2>
-		<h3>New Month Exam</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit temporibus corrupti quod corporis iure quas dolores sequi illo, officia ratione odio dicta maiores aperiam, quia natus nulla eveniet doloremque. Eum.</p>
-		
-		<h3>Total Registered</h3>
-		<i class="fas fa-users"></i><p>: 222222222</p>
-		<a href="#">Sign Up</a>
-		
-		<h3>Total Contributors</h3>
-		<i class="fas fa-globe"></i><p>: 222222222</p>
-		<a href="#">View All</a>
-		
-		<h3>Details</h3>
-		<i class="far fa-clock"></i><p>: 1222 GMT</p>
-		<i class="far fa-calendar-check"></i><p>: 1222 GMT</p>
-		<p>change time zone</p><select name="" id="">wwwww</select>
-		<a href="#">Start Now</a>
+	<div id="upcoming-events" class="page-section ">
+		<div class="wrapper">
+            <div class="feature-item feature-item--t-margin generic-content-container">
+                <h2 class="section-title section-title--blue"><i class="fas fa-bullhorn icon--r-large-margin icon__position" data-fa-transform="rotate--30"></i>Internal Events</h2>
+                  <div class="section-items ">
+                    <h3 class="section-items__sub-title-font-weight section-items__center">New Month Exam</h3>
+                      <p class="section-items__center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit temporibus corrupti quod corporis iure quas dolores sequi illo, officia ratione odio dicta maiores aperiam, quia natus nulla eveniet doloremque. Eum.</p>
+                <div class="row ">
+                   <div class="row__large-4 border--center border--l-padding">
+                         <h3 class="">Total Registered</h3>
+                        <p><i class="fas fa-users icon--r-color icon--r-margin"></i>  2223K</p>
+                        <a href="#" class="btn btn--small btn__no-border">Sign Up</a>
+                        
+                   </div>
+                   <div class="row__large-4 border--right border--left">
+                      
+                           <h3 class="">Total Contributors</h3>
+                        <p><i class="fas fa-user icon--r-color icon--r-large-margin"></i>  222M</p>
+                           <p >To contribute you must have atleast 2 stars</p>
+                        <a href="#" class="btn btn--small btn__no-border btn--r-margin">View All</a>
+                        <a href="#" class="btn btn--small btn__no-border">Add Question</a>
+                  </div>
+                   <div class="row__large-4 ">
+                   <div class="border border--center border--small-padding">
+                       <h3 class="">Time left</h3>
+                    <p><i class="far fa-clock icon--r-color icon-r--margin fa-pulse"></i> 22hrs left</p>
+                    <a href="#" class="btn btn--small btn__no-border">Start Now</a>
+                   </div>
+                    
+                   </div>
+                </div>
+           </div>
+            </div> 
+		</div>
 	</div>
 	
-	<div id="testimonials">
-		<h2><i class="fas fa-graduation-cap"></i> Scholars Views</h2>
+	<div id="testimonials" class="page-section page-section--gray">
+		<div class="wrapper">
+		    <h2 class="section-title section-title--blue"><i class="fas fa-graduation-cap icon--r-large-margin icon__position"></i> Scholars Views</h2>
 		
-		<img src=''>
-		<h3>Scholar Name of User</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem earum tenetur eum repudiandae nisi, facilis odio cum sunt, sed, recusandae velit numquam nam ad veritatis, odit molestiae. Excepturi, optio, dolores.</p>
-		
-		<img src=''>
-		<h3>Scholar Name of User</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem earum tenetur eum repudiandae nisi, facilis odio cum sunt, sed, recusandae velit numquam nam ad veritatis, odit molestiae. Excepturi, optio, dolores.</p>
-		
-		<img src=''>
-		<h3>Scholar Name of User</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem earum tenetur eum repudiandae nisi, facilis odio cum sunt, sed, recusandae velit numquam nam ad veritatis, odit molestiae. Excepturi, optio, dolores.</p>
-		
-		<img src=''>
-		<h3>Scholar Name of User</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem earum tenetur eum repudiandae nisi, facilis odio cum sunt, sed, recusandae velit numquam nam ad veritatis, odit molestiae. Excepturi, optio, dolores.</p>
+		<div class="row  row--slider-small-gutter generic-content-container owl-carousel owl-theme ">
+		    <div class="">
+               <div class="testimonial">
+                <div class="testimonial__img">
+                    <img 
+                    sizes="160px"
+                    srcset='assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w'>
+                </div>
+                <h3 class="testimonial__title">Scholar Name 1</h3>
+                <p class="testimonial__font-style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem earum tenetur eum repudiandae nisi, facilis odio cum sunt, sed, recusandae velit numquam nam ad veritatis, odit molestiae. Excepturi, optio, dolores.</p>
+                
+               </div>
+		    </div>
+		    <div class="">  
+                 <div class="testimonial">
+                <div class="testimonial__img">
+                    <img 
+                    sizes="160px"
+                    srcset='assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w'>
+                </div>
+                <h3 class="testimonial__title">Scholar Name 2</h3>
+                <p class="testimonial__font-style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem earum tenetur eum repudiandae nisi, facilis odio cum sunt, sed, recusandae velit numquam nam ad veritatis, odit molestiae. Excepturi, optio, dolores.</p>
+                
+               </div>
+		    </div>
+		    
+		    
+		    <div class="">
+               <div class="testimonial">
+                <div class="testimonial__img">
+                    <img 
+                    sizes="160px"
+                    srcset='assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w'>
+                </div>
+                <h3 class="testimonial__title">Scholar Name 3</h3>
+                <p class="testimonial__font-style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem earum tenetur eum repudiandae nisi, facilis odio cum sunt, sed, recusandae velit numquam nam ad veritatis, odit molestiae. Excepturi, optio, dolores.</p>
+                
+               </div>
+		    </div>
+		    <div class="">  
+                 <div class="testimonial">
+                <div class="testimonial__img">
+                    <img 
+                    sizes="160px"
+                    srcset='assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w'>
+                </div>
+                <h3 class="testimonial__title">Scholar Name 4</h3>
+                <p class="testimonial__font-style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem earum tenetur eum repudiandae nisi, facilis odio cum sunt, sed, recusandae velit numquam nam ad veritatis, odit molestiae. Excepturi, optio, dolores.</p>
+                
+               </div>
+		    </div>
+		    
+		    
+		</div>
+		</div>
 	</div>
 	
-	<div id="scholars-of-the-week">
-		<h2>SG24 TEAMS</h2>
-		<h3>SCHOLARS OF THE WEEK</h3>
-		
-		<img src="">
-		<img src="">
-		<h3> Sany ww</h3>
-		
-		<img src="">
-		<img src="">
-		<h3> Sany ww</h3>
-		
-		<img src="">
-		<img src="">
-		<h3> Sany ww</h3>
+	<div id="scholars-of-the-week" class="page-section">
+	<div class="wrapper">
+   <div class="feature-item">
+       
+   </div>
+    <h2 class="section-title section-title--blue"><i class="fas fa-users icon--r-large-margin icon__position"></i>SG24 TEAMS</h2>
+   <div class="section-items">
+     <h3 class="section-items__sub-title-font-weight">SCHOLARS OF THE WEEK</h3>
+    <div class="row   row--equal-height-at-large row--slider-small-gutter row--t-padding generic-content-container">
+       <div class="row__large-4 feature-item feature-item--no-bg-color"> 
+           <div class="scholars scholars--center border--all">
+                <div class="scholars__photo">
+                    <img 
+                        sizes="160px"
+                        srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w">
+                </div>
+    <!--		<img src="">-->
+                <h4 class='scholars__title'> Sany ww</h4>
+               <p class="scholars__subtitle"><i class="fas fa-star icon--r-color"></i>
+                <i class="fas fa-star icon--r-color"></i>
+                <i class="fas fa-star icon--r-color"></i>
+                </i>
+                <i class="fas fa-star icon--r-color"></i>
+                </i>
+                <i class="fas fa-star icon--r-color"></i></p> 
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad veniam excepturi, fugiat animi! Aliquam animi repellat omnis possimus, in voluptate dign!</p>
+                
+                <i class="fab fa-facebook icon--r-margin icon--l-margin icon__medium-size icon--b-color"></i>
+                <i class="fab fa-twitter-square icon--r-margin icon--l-margin icon__medium-size icon--black"></i>
+                <i class="fab fa-google-plus-square icon--l-margin icon__medium-size icon--r-color"></i>
+                <i class="fas fa-envelope-square icon--l-margin icon__medium-size icon--b-color"></i>
+                <p><a href="" class="btn btn--small btn__no-border btn--t-margin">View all post</a></p>
+           </div>     
+       </div>
+      
+        <div class="row__large-4 feature-item feature-item--no-bg-color"> 
+           <div class="scholars scholars--center border--all">
+                <div class="scholars__photo">
+                    <img 
+                        sizes="160px"
+                        srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w">
+                </div>
+    <!--		<img src="">-->
+                <h4 class='scholars__title'> Sany ww</h4>
+               <p class="scholars__subtitle"><i class="fas fa-star icon--r-color"></i>
+                <i class="fas fa-star icon--r-color"></i>
+                <i class="far fa-star icon--r-color"></i>
+                </i>
+                <i class="far fa-star icon--r-color"></i>
+                </i>
+                <i class="far fa-star icon--r-color"></i></p> 
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad veniam excepturi, fugiat animi! Aliquam animi repellat omnis possimus, in voluptate dignissimos rerum earum non autem. Laboriosam voluptatem, eos quidem saepe!</p>
+                
+                <i class="fab fa-facebook icon--r-margin icon--l-margin icon__medium-size icon--b-color"></i>
+                <i class="fab fa-twitter-square icon--r-margin icon--l-margin icon__medium-size icon--black"></i>
+                <i class="fab fa-google-plus-square icon--l-margin icon__medium-size icon--r-color"></i>
+                <i class="fas fa-envelope-square icon--l-margin icon__medium-size icon--b-color"></i>
+                <p><a href="" class="btn btn--small btn__no-border btn--t-margin">View all post</a></p>
+           </div>     
+       </div>
+       
+         <div class="row__large-4 feature-item feature-item--no-bg-color"> 
+           <div class="scholars scholars--center border--all">
+                <div class="scholars__photo">
+                    <img 
+                        sizes="160px"
+                        srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w">
+                </div>
+    <!--		<img src="">-->
+                <h4 class='scholars__title'> Lorem ipsum</h4>
+               <p class="scholars__subtitle"><i class="fas fa-star icon--r-color"></i>
+                <i class="fas fa-star icon--r-color"></i>
+                <i class="fas fa-star icon--r-color"></i>
+                </i>
+                <i class="far fa-star icon--r-color"></i>
+                </i>
+                <i class="far fa-star icon--r-color"></i></p> 
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad veniam excepturi, fugiat animi! Aliquam animi repellat omnis possimus, in voluptate dignissimos rerum earum non autem. Laboriosam voluptatem, eos quidem saepe!</p>
+                
+                <i class="fab fa-facebook icon--r-margin icon--l-margin icon__medium-size icon--b-color"></i>
+                <i class="fab fa-twitter-square icon--r-margin icon--l-margin icon__medium-size icon--black"></i>
+                <i class="fab fa-google-plus-square icon--l-margin icon__medium-size icon--r-color"></i>
+                <i class="fas fa-envelope-square icon--l-margin icon__medium-size icon--b-color"></i>
+                <p><a href="" class="btn btn--small btn__no-border btn--t-margin">View all post</a></p>
+           </div>     
+       </div>
+       
+   </div>
+        
+    </div>
 		
 		<p>Tips: to become scholars of the week 
 			<a href="">Tips</a>
 		</p>
 	</div>
+	</div>
 	
 	<footer>
-	
-		<h3><i class="far fa-envelope"></i>contact us</h3>
-		<p>SG24@gmail.com</p>
-		<i class="fas fa-circle"></i>
-		<i class="fas fa-circle"></i>
-		<i class="fas fa-circle"></i>
-		<i class="fas fa-circle"></i>
-		
-		<h3><i class="far fa-bell"></i>Subscribe to newsLetter</h3>
-		<p>Subscribe to our newsletter to stay up to date with the latest news and offers</p>
-		<form action="" method="post">
-			<input type="text">
-			<p>Enter your email address</p>
-			<i class="fas fa-location-arrow"></i>
-			<input type="submit">
-		</form>
-		
-		
-		<p>Copyight &copy; 2018 by Agile Web dev <a href="#">Contact Us</a></p>
+     <div class="site-footer">
+        <div class="wrapper">
+           <div class="row">
+               <div class="row__small-4 border--b-margin">
+                    <h3 class="site-footer__text"><i class="far fa-envelope icon--r-margin"></i>contact us</h3>
+                    <p class="site-footer__subtitle">SG24@gmail.com</p>
+                    <i class="fab fa-facebook icon--r-margin icon--l-margin icon__medium-size icon--w-color"></i>
+                <i class="fab fa-twitter-square icon--r-margin icon--l-margin icon__medium-size icon--w"></i>
+                <i class="fab fa-google-plus-square icon--l-margin icon__medium-size icon--w-color"></i>
+                <i class="fas fa-envelope-square icon--l-margin icon__medium-size icon--w-color"></i>
+               </div>
+               <div class="row__small-4 border--right border--white">
+                   <h3 class="site-footer__text"><i class="far fa-paper-plane icon--r-margin"></i> Instant Messenger</h3>
+                   <a href="" class="btn btn--white btn--t-margin btn--medium-font">send message</a>
+               </div>
+               <div class="row__small-4">
+                   <h3 class="site-footer__text"><i class="fas fa-bolt icon--r-margin"></i>Site Shortcuts</h3>
+                   <div class="list-item list-item--no-t-padding link">
+                       <p>
+                           <a href="" class="link--yellow link__l-size-link link--b-display link--b-margin ">Set Question</a>
+                       <a href="" class="link--white link__l-size-link link--b-display link--b-margin link--l-margin link--b-padding">News</a>
+                       </p>
+                       <p>
+                        <a href="" class="link--yellow link__l-size-link link--b-display link--b-margin link--b-padding">Ask Questions</a>
+                       <a href="" class="link--white link__l-size-link link--b-display link--b-margin link--l-margin link--b-padding" >Set Questions</a>
+                       </p>
+                       <a href="" class="link--yellow link__l-size-link link--b-display link--b-margin link--b-padding">Account</a> 
+                       
+                   </div>
+                   
+               </div>
+           </div>
+            <p class="site-footer__subtitle border--top">Copyight &copy; 2018 by Agile Web dev <a href="#" class="link--yellow" >Contact Us</a></p>
+         </div>
+        </div>
+	</div>
 	</footer>
-	<div class="owl-carousel owl-theme">
-    <div class="item"><h4>1</h4></div>
-    <div class="item"><h4>2</h4></div>
-    <div class="item"><h4>3</h4></div>
-    <div class="item"><h4>4</h4></div>
-    <div class="item"><h4>5</h4></div>
-    <div class="item"><h4>6</h4></div>
-    <div class="item"><h4>7</h4></div>
-    <div class="item"><h4>8</h4></div>
-    <div class="item"><h4>9</h4></div>
-    <div class="item"><h4>10</h4></div>
-    <div class="item"><h4>11</h4></div>
-    <div class="item"><h4>12</h4></div>
-</div>
-<span class="fa-layers fa-fw" style="background:MistyRose">
-    <i class="fas fa-certificate"></i>
-    <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-11.5 rotate--30" style="font-weight:900">NEW</span>
-  </span>
-
-  <span class="fa-layers fa-fw" style="background:MistyRose">
-    <i class="fas fa-envelope"></i>
-    <span class="fa-layers-counter" style="background:Tomato">1,419</span>
-  </span>
-<a class="customNextBtn btn">next</a>
-<a class="customPrevBtn btn">next</a>
 </body>
 </html>
 
-<style>
-    .item{
-        width: 200px;
-        height: 200px;
-        background: red;
-        margin: 0 auto;
-    }
-</style>
 <script>
+
+    
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin: 10,
     nav:true,
+//    dots:false,
+//    responsiveBaseElement:".row__medium-4",
 navText: false,
-//    slideBy: 2,
+    slideBy: 1,
     autoplay: true,
 //    autoplayTimeout: 1000,
-//    autoplayHoverPause: true,
+    autoplayHoverPause: true,
+//    stagePadding: 3,
+//    autoWidth: true,
 //    smartSpeed: 500,
 //    autoplaySpeed: true,
-    animateOut: true,
-    animateIn: true,
+//    animateOut: true,
+//    animateIn: true,
     responsive:{
         0:{
             items:1
         },
         600:{
-            items:3
+            items:1
         },
         1000:{
-            items:5
+            items:1
         }
     }
 });
+    
+$('.loop').owlCarousel({
+    center: true,
+    items:2,
+    loop:true,
+    margin:10,
+    responsive:{
+        600:{
+            items:4
+        }
+    }
+});
+$('.nonloop').owlCarousel({
+    center: true,
+    items:2,
+    loop:false,
+    margin:10,
+    responsive:{
+        600:{
+            items:4
+        }
+    }
+});
+
     
 var owl = $('.owl-carousel');
 owl.owlCarousel();
@@ -567,4 +742,48 @@ $('.customPrevBtn').click(function() {
     owl.trigger('prev.owl.carousel', [300]);
 })
 </script>
+
+
+
+
+
+
+
+ <!-- jQuery library (served from Google) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <!-- Slider Javascript file -->
+        <script src="js-css/jquery.jcslider.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('.jc-slider').jcSlider({
+                    animationIn: 'bounceInRight',
+                    animationOut: 'bounceOutLeft',
+                    stopOnHover: false
+                });
+
+                $('.jc-slider2').jcSlider({
+                    animationIn: 'zoomInUp',
+                    animationOut: 'flipOutX'
+//                    stopOnHover: true
+                });
+                $('.jc-slider3').jcSlider({
+                    animationIn: 'flipInX',
+                    animationOut: 'shake',
+                    stopOnHover: false
+                });
+                $('.jc-slider4').jcSlider({
+                    animationIn: 'zoomIn',
+                    animationOut: 'zoomOut',
+                    stopOnHover: false
+                });
+            });
+        </script>
+       
+
+
+
+
+
+
 

@@ -1,7 +1,7 @@
 .section-title {
     
     position: relative;
-	font-size: .9rem;
+	font-size: 1.8rem;
 	font-weight: 300;
 	text-align: center;
 /*    color: #fff;*/
@@ -10,7 +10,7 @@
     margin: 0;
     
 	@mixin atSmall {
-		font-size: 1.5rem;
+		font-size: 2.5rem;
 	}
 	
 /*
@@ -25,19 +25,8 @@
     }
     
     &--blue {
-         background-color: $mainBlue;
+         color: $mainBlue;
     }
-	
-	&__icon {
-	    margin-right: 10px;
-        
-		@mixin atSmall {
-		    margin-right: 10px;
-			display: inline;
-            color: $mainGray;
-            font-size: 1.3rem;
-		} 
-	}
     
     &--t-margin {
         margin: 0 ;

@@ -5,10 +5,6 @@
         padding: 3.125rem 0;
     }
     
-    &__userRank {
-         background-color: $mainBlue;
-    }
-    
     &--gray {
         background-color: rgba($mainGray,.8);
         color: $mainBlack;

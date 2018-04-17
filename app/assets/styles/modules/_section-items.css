@@ -1,52 +1,78 @@
 .section-items {
-    background-color: $mainGray;
    
-    font-size: 1rem;
-    font-weight: 400;
+    position: relative;
+	padding-bottom: .3rem;
+	
+	@mixin atSmall {
+
+	}
     
-    @mixin atSmall {
-    font-size: 1.2rem;
+    &--t-padding {
+        padding-top: 10px;
+    }
+    
+    &--t-margin {
+        margin-top: 20px;
     }
     
     &__title {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: .5em;
+		margin-bottom: .5rem;
+
+        @mixin atSmall {
+        font-size: 1.2rem;
+        }
+        
+    }
+    
+    
+    &__sub-title {
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: 2.1em;
         text-align: center;
-         margin: 0 ;
+
+        @mixin atSmall {
+        font-size: 1rem;
+        }
+        
     }
     
+
+    
+    &__sub-title-font-weight {
+        font-weight: 400;
+        text-align: center;
+        font-size: 1rem;
+        
+        @mixin atSmall {
+            font-size: 1.2rem;
+        }
+    }
+    
+    &__center {
+        text-align: center;
+    }
   
-    
-    &--t-padding {
-        padding-top: 15px;
+   
+    &__bg-blue {
+        background-color: $mainBlue;
     }
     
-    &--tb-margin{
-        margin: 30px 0;
+    &--blue {
+        color: $mainBlue;
     }
     
-    &__page-section {
-        padding:  0 0 10px 0;
+    &--white {
+        color: #fff;
     }
-    
-    &__no-margin {
-        margin: 0;
+    &--red {
+        background-color: $mainRed;
     }
-    
-    &__no--bg-color {
-        background: none;
+    &--yellow {
+       color: yellow;
     }
-    
-	
-    &__bg--image{
-         @mixin atSmall {
-              background: url("/assets/images/userRank-large.jpg")  no-repeat;
-              background-size: contain;
-                left: 0;
-/*                width: 100%;*/
-             font-size: 23px;
-/*             background-color: red;*/
-          }
-    }
-    
-    
     
 }

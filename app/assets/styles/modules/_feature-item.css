@@ -3,9 +3,30 @@
     background: #fff;
     position: relative;
 	padding-bottom: .5rem;
-      
+    margin-bottom: 35px;  
+    margin-top: -5px;
+    padding:  0 5px 0.5rem 5px;
+   
+    
     @mixin atSmall {
-        @mixin border;
+        padding: 1px 10px 10px 10px;
+    }
+    
+    @mixin atLarge {
+        margin-bottom: 35px;
+    }
+    
+    
+    &--t-padding {
+        padding-top: 20px;
+    }
+    
+    &--t-margin {
+        margin-top: 5px;
+    }
+    
+    &--no-bg-color {
+        background: none;
     }
   
 }

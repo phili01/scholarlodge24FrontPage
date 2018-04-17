@@ -18,9 +18,28 @@
         }
     }
     
+    &__padding-large{
+        padding: 9px 0px 9px 0px;
+        
+        @mixin atMedium{
+            padding: 12px 0px 12px 0px;
+        }
+    }
+    
     &__padding-small {
         padding: 4px 0;
         display: block;
+    }
+    
+    &__l-margin {
+        margin-left: 7px;
+        float: right;
+        height: 10px;
+        
+        @mixin atSmall {
+            float: none;
+            height: auto;
+        }
     }
     
     &__form-width--smaller {
@@ -33,15 +52,37 @@
          margin: 0 auto;
     }
     
+    &__form-width--large-input {
+        
+           width: 95%;
+           position: relative;
+           left: 3%;
+        
+        @mixin atLarge {
+            width: 100%;
+            left: -5%;
+        }
+    }
+    
     &__form-title {
         position: absolute;
         top: 30%;
         width: 80%;
         transform: translateY(-30%);
         font-size: 0.8rem;
-        left: 60%;
-        transform: translateX(-60%);
+        left: 70%;
+        transform: translateX(-70%);
         color: $mainBlack;
+        font-weight: 300;
+        font-size: .6rem;
+        
+         @mixin atMedium {
+            font-size: .8rem
+        }
+        
+        @mixin atLarge {
+            font-size: 1rem; 
+        }
         
     }
     
@@ -57,9 +98,63 @@
         transform: translateX(-89%);
     }
     
+     &__submit--form {
+         
+        
+        width: 15%;
+        position: absolute;
+        overflow: hidden;
+        border-bottom-right-radius: 10px; 
+        border-top-right-radius: 10px; 
+        top: -2%;
+        transform: translateY(2%);
+        left: 97.6%;
+        transform: translateX(-97.6%);
+         background-color: $mainGray;
+         text-align: center;
+         padding: 10px 0;
+         
+         @mixin atMedium {
+             padding: 12px 0;
+             top: 32%;
+             transform: translateY(-32%);
+             left: 97.8%;
+              transform: translateX(-97.8%);
+         }
+         
+         @mixin atLarge {
+             left: 94.5%;
+             transform: translateX(-94.5%);
+         }
+    }
       &--t-margin {
           margin: 12px 0 0 0 ;
           padding: 0;
+    }
+    
+    &__input-description {
+        position: absolute;
+        top: 30%;
+        transform: translateY(-30%);
+        left: 7%;
+        transform: translateX(-7%);
+        color: $mainBlack;
+        font-size: .6rem;
+        font-weight: 300;
+        
+        @mixin atMedium {
+            top: 66% ;
+            transform: translateY(-66%);
+            font-size: .8rem;
+        }
+        
+        @mixin atLarge {
+            font-size: .8rem;
+           left: -2%;
+           transform: translateX(2%); 
+            top: 65% ;
+            transform: translateY(-65%);
+        }
     }
     
 }

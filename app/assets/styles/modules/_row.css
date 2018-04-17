@@ -3,7 +3,7 @@
 	@mixin clearfix;
 	
 	&--t-padding {
-		padding-top: 80px;
+		padding-top: 20px;
 	}
 	
 	&--gutters {
@@ -17,6 +17,10 @@
 	&--gutters-small {
 		margin-right: -45px;
 	}
+    
+    &--slider-small-gutter {
+        margin-right: -20px;
+    }
 	
 	&--gutters > div {
 		padding-right: 45px;
@@ -29,12 +33,34 @@
 	&--gutters-small > div {
 		padding-right: 45px;
 	}
+    
+    &--slider-small-gutter > div {
+        padding-right: 20px;
+    }
 	
 	&__b-margin-until-medium {
 		margin-bottom: 1rem;
 	}
+    
+    @mixin atSmall {
+        
+	 &__small-4 {
+		float: left;
+		width: 33.33%;
+	 }
+	
+	}
+	
+    
+    
 	
 	@mixin atMedium {
+        
+        &__small-6 {
+            float: left;
+			width: 50%;
+            background: red;
+        }
 		
 	 &__b-margin-until-medium {
 		margin-bottom: 0;
@@ -43,6 +69,11 @@
 	 &__medium-4 {
 		float: left;
 		width: 33.33%;
+	 }
+     
+      &__medium-4--smaller {
+		float: left;
+		width: 20%;
 	 }
 		
 	  &__medium-4--larger {
@@ -62,6 +93,14 @@
 	  &__medium-8--smaller {
 		width: 63%;
 	  }
+       &__medium-8--larger {
+           float: left;
+		 width: 60%;
+	  }
+        
+        &__medium-12 {
+            width: 100%;
+        }
 	}
 	
 	@mixin atLarge{
