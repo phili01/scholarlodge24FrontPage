@@ -2,9 +2,35 @@
 
     border-top: 2px solid $mainRed;
     padding-top: 20px;
-   
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    transition: all .3s ease-out;
+    
+    @mixin atMedium {
+        
+        &--shrink {
+            position: fixed;
+            border: none;
+            padding: 0px 0 0 0 ;
+            margin: -20px 0;
+            background-color: transparent;
+            transition: all .3s ease-out;
+            
+            & >.medium-display {
+                display: none;
+            }
+            
+            & >.medium-bgcolor {
+                background-color: rgba($mainBlue, .8);
+            }
+          
+        }
+    }
+ 
     &__seo-container {
-     
+    
 	}
 
     &__form-container {
@@ -18,8 +44,19 @@
     
 	&__btn-container {
        text-align: center;
-        padding-top: 20px;
+        padding-top: 33px;
+        text-decoration: none;
         
+        & a {
+            color: gray;
+            font-style: italic;
+        }
+        
+        & a:hover {
+            color: #000;
+            font-weight: 600;
+            transition: all .3s ease-out;
+        }
         @mixin atLarge {
             text-align: left
         }
@@ -57,6 +94,20 @@
             padding-right: 40px;
         }
     }
+    
+    &__logo--sticky {
+/*
+        opacity: 0;
+        transform: scale(2.5);
+        transition: all .3s ease-out;
+        position: absolute;
+        background-color: rgba(#fff, 1);
+        top: -7px;
+        left: -12px;
+*/
+        
+        
+    }
 	
 	&__logo__graphic {
 /*		text-indent: -9999px;*/
@@ -65,21 +116,97 @@
     &__menu-icon {
 		width: 20px;
 		height: 20px;
-		background-color: $mainRed;
+		background-color: #fff;
 		position: absolute;
 		top: 40px;
-		right: 40px;
-		
-		@mixin atMedium {
+		right: 25px;
+        
+		@mixin atMedium {     
 			display: none;
 		}
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 3px;
+            width: 20px;
+            background-color: $mainRed;
+            transition: transform .3s ease-out;
+        }
+        
+        &__middle {
+            position: absolute;
+            background-color: $mainRed;
+            height: 3px;
+            width: 20px;
+            top: 8px;
+            transition: all .3s ease-out;
+        }
+        
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+            height: 3px;
+            width: 20px;
+            background-color: $mainRed;
+            transition: transform .3s ease-out
+        }
+        
 	}
     
+     &__menu-icon--close-x {
+        &::before {
+            transform: rotate(45deg) scaleX(1.25);
+        }
+          
+      .site-header__menu-icon__middle {
+            opacity: 0;
+          transform: scaleX(0);
+      }
+        
+        &::after {
+           transform: rotate(-45deg) scaleX(1.25) translateY(-12px) translateX(9px); 
+        }
+    }
+    
     &__menu-content {
-		display: none;
-		
-		@mixin atMedium {
+		opacity: 0;
+/*        height: 0;*/
+        transform: scale(1.5);
+        transition: all .5s ease-out;
+        position: absolute;
+        top: 80px;
+        width:60%;
+        z-index: -10;
+        background-color: rgba($mainBlue, .9);
+        
+        &--login {
+            position: absolute;
+            opacity: 0;
+            z-index: -10;
+            
+            @mixin atMedium {
+                height: auto;
+                z-index: 1;
+                opacity: 1;
+                position: relative;
+            }
+        }
+        
+        @mixin atMedium {
+            background-color: $mainBlue;
+            transform: scale(1);
+            width: 100%;
+            height: auto;
+            opacity: 1;
 			display: block;
+            position: relative;
+            top: 0;
+            margin-top: 15px;
 		}
 	}
     
@@ -129,5 +256,68 @@
             display: block;
         }
     }
+    
+    &__show-only-on-small {
+        opacity: 1;
+        text-align: center;
+        padding: 12px 0;
+        font-weight: 300;
+        font-size: .8rem;
+        width: 100%;
+        display: block;
+        
+        &__r-margin {
+            margin-right: 12px;
+            padding: 4px 3px;
+            border-radius: 12px;
+            background-color: $mainGray;
+            font-size: .7rem;
+            
+            @mixin atSmall {
+                font-size: .8rem;
+            }
+        }
+        
+        &__color {
+            color: $mainBlack;
+        }
+        
+        &__r-color {
+            color: $mainRed;
+        }
+        
+        @mixin atMedium {
+           opacity: 0;
+           visibility: hidden; 
+        }
+    }
+    
+    &__filter {
+       
+        cursor: pointer;
+        
+        &--content {
+        display: none;
+        transform: scale(1.5);
+        transition: all .5s ease-out;
+       
+        }
+        
+        &--content--is-visible{
+             display: block;
+            opacity: 1;
+            transform: scale(1)
+        }
+    }
+    
+   
+    
+    &--is-visible {
+        width: 100%;
+        opacity: 1;
+        z-index: 1;
+        transform: scale(1);
+    }
+    
     
 }

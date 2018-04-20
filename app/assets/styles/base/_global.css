@@ -10,8 +10,11 @@ img {
 
 * {
 	box-sizing: border-box;
+    outline: none;
 }
 
 a {
 /*	color: $mainBlack;*/
 }
+
+

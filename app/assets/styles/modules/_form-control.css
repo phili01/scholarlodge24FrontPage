@@ -113,6 +113,7 @@
          background-color: $mainGray;
          text-align: center;
          padding: 10px 0;
+         cursor: pointer;
          
          @mixin atMedium {
              padding: 12px 0;
@@ -126,6 +127,17 @@
              left: 94.5%;
              transform: translateX(-94.5%);
          }
+         
+         &:hover {
+             background-color: #f8f8f9;
+             
+              & > .submit__icon--main {
+                color: $mainBlue;
+                transition: all .5s ease-out;
+              }
+            
+         }
+         
     }
       &--t-margin {
           margin: 12px 0 0 0 ;

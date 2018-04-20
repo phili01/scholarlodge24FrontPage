@@ -2,47 +2,134 @@
 	display: flex;
     justify-content: center;
 	display: inline-block;
-    margin-top: 20px;
+    margin-top: 5px;
+    width: 100%;
     
 	&--pull-right {
 /*		float: right;*/
 	}
     
-    &--blue {
-        background-color: $mainBlue;
-    }
     
     &--padding-all {
         padding: 5px 0px;
-        
-        
-        @mixin atLarge {
-            padding: 5px 0px;
-        }
     }
 	
 	ul {
-        display: flex;
-        justify-content: center;
+		@mixin clearfix;
         
+        @mixin atMedium {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
 	}
 	
 	li {
 		list-style: none;
-		float: left;
-		padding-right: 24px;
+        display: block;
+        
+        @mixin atMedium {
+            float: left;
+            display: inline;
+            padding-right: 24px;
+             text-align: center;
+        }
         
         @mixin atLarge {
-            padding-right: 40px;
+            margin: 2px 25px 0 5px;
         }
 	}
 	
     a {
         font-size: .9rem;
+        font-weight: 300;
+    }
+    
+    & input {
+        position: absolute;
+        width: 70%;
+        padding: 6px 0;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        left: 34%;
+        transform: translateX(-34%);
+        
+    }
+    
+    &__search--unitl-click {
+        position: absolute;
+        padding: 5.8px 15px 5.8px 15px;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        transition: all .3s ease-out;
+        right: 15.3%;
+        background-color: $mainGray;
+        color: $mainBlue;
         
         @mixin atLarge {
-            font-size: 1rem;
+           right: 16.45%; 
+        }
+        
+        &:hover {
+            background-color: $mainGray;
+            color: $mainRed;
         }
     }
+    
+    &__form {
+        display: none ;
+    }
+    
+    &__form--is-expanded {
+        display: block
+    }
+    
+    &__hide-on-form-expanded__false {
+        display: block;
+    }
+    
+    &__hide-on-form-expanded__true {
+        display: none;
+    }
+    
+    &__form-disabled-true {
+/*        display: ;*/
+    }
+    
+    
+    &__form--close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 1.4rem;
+        transform: scaleX(1.2);
+        transform-origin: 100% 0%;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+        
+        &:hover {
+            color: $mainRed;
+        }
+    }
+    
+    &__form--close--is-visible {
+        display: block;
+    }
+    
+    &__search {
+        display: none;
+        transform: scale(13) ;
+        padding-top: 3px;
+        cursor: pointer;
+        transition: all .3s ease-out;
+    }
+    
+      &__search--is-visible {
+        display: block;
+        visibility: visible;
+        transform: scale(1);
+     }
+    
 
 }
