@@ -28,54 +28,80 @@
 </head>
 <body>
 	<header class="site-header">
-	    <div class="wrapper">
+	    <div class="wrapper medium-display">
             <div class="row">
                  <div class="row__medium-4--smaller site-header__logo">
                 <img src="assets/images/icons/logo.svg">
     <!--	        scholorlodge 24-->
+               </div>
+            <div class="site-header__menu-icon">
+                <div class="site-header__menu-icon__middle"></div>
             </div>
-            <div class="site-header__menu-icon"></div>
             <div class="row__medium-8--larger">
                 <div class="site-header__form-container form-control form-control__width">
                    <form method="post" action="">
                     <input type="text" class="form-control__form-group form-control__padding-large form-control__form-width--large-input">
                     <span class="form-control__input-description">looking for something........</span>
                     <div class="form-control__submit--form">
-                    <i class="fas fa-search icon--r-color"></i>
+                    <i class="fas fa-search icon--r-color submit__icon--main"></i>
                     </div>
                  </form> 
                 </div>  
             </div>
-            <div class="row__medium-4--smaller site-header__btn-container site-header__menu-content">
-                    <a href="#" class="btn btn--small link--r-margin--small btn__padding--all">Sign Up</a>
-                    <a href="#" class="btn btn--small btn--white border--all btn__padding--all btn__font-weight">Login</a>
-                </div>
+            <div class="row__medium-4--smaller site-header__btn-container site-header__menu-content--login link">
+                    <a href="#" class="link--gray">Sign Up</a>
+                       <span> or</span>
+                    <a href="#" class="">Login</a>
             </div>
-            <p class="site-header__content--center"><i class="fas fa-filter icon--r-color icon--r-margin"></i>Search Filter:</p>
+            
+<!--
+            <p class="site-header__content--center site-header__filter"><i class="fas fa-filter icon--r-color icon--r-margin"></i>Search Filter:</p>
             <div class="site-header__filter-containier">
-              <span class="site-header__content--center--medium"><i class="fas fa-filter icon--r-color icon--r-margin"></i>Search Filter:</span>
-               <div class="">
+              <span class="site-header__content--center--medium site-header__filter"><i class="fas fa-filter icon--r-color icon--r-margin"></i>Search Filter:</span>
+               <div class="site-header__filter--content">
                    <p class="site-header__l-margin site-header__r-margin site-header__i-block">All <input type="checkbox" class="form-control__l-margin"> </p>
                    <p class="site-header__l-margin site-header__r-margin site-header__i-block"> Question <input type="checkbox" class="form-control__l-margin"> </p>
                </div>
-               <div class="">
-                   <p class="site-header__l-margin site-header__r-margin site-header__i-block">News <input type="checkbox" class="form-control__l-margin"> </p>
-                   <p class="site-header__l-margin site-header__r-margin site-header__i-block">  Blog<input type="checkbox" class="form-control__l-margin"> </p>
-               </div>
-               
+-->
+           
+            <div class="site-header__show-only-on-small link">    
+                    <a href="" class="site-header__show-only-on-small__r-margin site-header__show-only-on-small__color">Set Question</a>
+                    <a href="" class="site-header__show-only-on-small__r-margin site-header__show-only-on-small__r-color">Group Chat</a>
             </div>
-	    </div>
-	<div class="site-header__menu-content">
-            <nav class="primary-nav primary-nav--pull-right primary-nav--blue row__medium-12 primary-nav--padding-all">
+          </div>
+	   </div>
+	<div class="site-header__menu-content medium-bgcolor">
+            <nav class="primary-nav primary-nav--pull-right row__medium-12 primary-nav--padding-all">
+<!--
+               <div class="site-header__logo--sticky">
+                <img src="assets/images/icons/logo.svg">
+    	        scholorlodge 24
+               </div>
+-->
                 <ul class="link">
-                     <li><a href="" class="link--white link--nav-link"><i class="fas fa-home icon--r-margin icon--y-color"></i>Home</a></li>
-                    <li><a href="" class="link--white link--nav-link"><i class="fas fa-hourglass-half icon--r-margin icon--y-color"></i>Hot Seat <i class="fas fa-caret-right"></i></a></li>
-                    <li><a href="" class="link--white link--nav-link"><i class="fas fa-globe fa-pulse icon--r-margin icon--y-color "></i>News <i class="fas fa-caret-right"></i> </a></li>
-                    <li><a href="" class="link--white link--nav-link"><i class="fas fa-question icon--r-margin icon--y-color"></i>Add Question</a></li>
-                    <li><a href="" class="link--white link--nav-link"><i class="fas fa-shopping-cart icon--r-margin icon--y-color"></i>Store</a></li>
-                    <li><a href="" class="link--white link--nav-link"><i class="fas fa-users icon--r-margin icon--y-color"></i>Chat Groups <i class="fas fa-caret-right"></i></a></li>
-                    <li><a href="" class="link--white link--nav-link"><i class="fas fa-envelope icon--r-margin icon--y-color"></i>Contact Us</a></li>
+                    <span class="primary-nav__hide-on-form-expanded__false">
+                        <li class="list-item--t-margin"><a href="" class="link--white link--nav-link"><i class="fas fa-home icon--r-margin-large__nav icon--y-color"></i>Home</a></li>
+                    <li class="list-item--t-margin "><a href="" class="link--white link--nav-link"><i class="fas fa-hourglass-half icon--r-margin-large__nav icon--y-color"></i>Hot Seat <i class="fas fa-caret-right"></i></a></li>
+                    <li class="list-item--t-margin"><a href="" class="link--white link--nav-link"><i class="fas fa-globe fa-pulse icon--r-margin-large__nav icon--y-color "></i>News <i class="fas fa-caret-right"></i> </a></li>
+                    <li class="list-item--t-margin"><a href="" class="link--white link--nav-link"><i class="fas fa-question icon--r-margin-large__nav icon--y-color"></i>Add Question</a></li>
+                    <li class="list-item--t-margin"><a href="" class="link--white link--nav-link"><i class="fas fa-shopping-cart icon--r-margin-large__nav icon--y-color"></i>Store</a></li>
+                    <li class="list-item--t-margin"><a href="" class="link--white link--nav-link"><i class="fas fa-users icon--r-margin-large__nav icon--y-color"></i>Chat Groups <i class="fas fa-caret-right"></i></a></li>
+                    <li class="list-item--t-margin"><a href="" class="link--white link--nav-link"><i class="fas fa-envelope icon--r-margin-large__nav icon--y-color"></i>Contact Us</a></li>
+                    </span>  
+                    <div class="primary-nav__search">
+                        <i class="fas fa-search icon--w-color submit__icon--main primary-nav__hide-on-form-expanded__false primary-nav__form-disabled-true"></i>
+                    </div>
+                    <form action="" class="primary-nav__form">
+                        <input type="text" class="primary_nav__input">
+                         <div class="primary-nav__search--unitl-click">
+                        <i class="fas fa-search"></i>
+                        </div>
+                    </form>
                 </ul>
+                <div class="primary-nav__form--close">
+                    X
+                </div>
+                
             </nav>
       </div>
 	</header>
@@ -670,6 +696,7 @@
         </div>
 	</div>
 	</footer>
+	 <script src="./temp/scripts/App.js">    </script>
 </body>
 </html>
 

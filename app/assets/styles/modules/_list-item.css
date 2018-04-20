@@ -51,4 +51,14 @@
         text-align: center ;
     }
     
+    &--t-margin {
+        margin: 10px 0;
+        
+        @mixin atMedium {
+            margin: auto;
+        }
+    }
+    
+
+    
 }

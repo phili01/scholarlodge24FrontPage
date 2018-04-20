@@ -28,6 +28,14 @@
          margin-right: 20px;
     }
     
+    &--r-margin-large__nav {
+        margin-right: 12px;
+            
+        @mixin atMedium {
+            margin-right: 5px;
+        }
+    }
+    
     &--l-margin{
         margin-left: 5px;
     }
@@ -53,6 +61,7 @@
      &--r-color {
         color: $mainRed;
     }
+    
     
     
 }

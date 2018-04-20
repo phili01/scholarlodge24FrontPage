@@ -1,7 +1,9 @@
 .hero-section {
     
     position: relative;
-    border: 5px solid $mainGray;
+    border-top: 5px solid $mainBlue;
+    top: 186px;
+    margin-bottom: 170px;
     
     @mixin atMedium {
         border-top: none;
