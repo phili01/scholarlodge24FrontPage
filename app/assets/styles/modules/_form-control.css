@@ -106,13 +106,13 @@
         overflow: hidden;
         border-bottom-right-radius: 10px; 
         border-top-right-radius: 10px; 
-        top: -2%;
+        top: -1%;
         transform: translateY(2%);
-        left: 97.6%;
-        transform: translateX(-97.6%);
+        left: 97.8%;
+        transform: translateX(-97.8%);
          background-color: $mainGray;
          text-align: center;
-         padding: 10px 0;
+         padding: 9px 0;
          cursor: pointer;
          
          @mixin atMedium {
@@ -153,6 +153,24 @@
         color: $mainBlack;
         font-size: .6rem;
         font-weight: 300;
+        
+      &--is-hidden {
+        display: none;
+        transform: scale(8.3);
+        visibility: hidden;
+        transition: all .3sec ease-out;
+     }
+    
+    
+     &--is-visible {
+        opacity: 1;
+        transform: scale(1);
+        visibility: visible;
+        transition: all .3sec ease-out;
+      }
+    
+        
+        
         
         @mixin atMedium {
             top: 66% ;

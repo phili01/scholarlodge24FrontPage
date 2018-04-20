@@ -2,7 +2,7 @@
     
     position: relative;
     border-top: 5px solid $mainBlue;
-    top: 186px;
+    top: 170px;
     margin-bottom: 170px;
     
     @mixin atMedium {
