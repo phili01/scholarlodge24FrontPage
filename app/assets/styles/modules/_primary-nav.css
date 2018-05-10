@@ -1,9 +1,11 @@
 .primary-nav {
-	display: flex;
-    justify-content: center;
+    
 	display: inline-block;
-    margin-top: 5px;
-    width: 100%;
+    margin-top: 15px;
+   
+    @mixin atMedium {
+        margin-top: 5px;
+    }
     
 	&--pull-right {
 /*		float: right;*/
@@ -16,12 +18,13 @@
 	
 	ul {
 		@mixin clearfix;
-        margin: 10px 0 0 30px;
+        margin: 10px 0 0 20px;
         padding: 0;
         
         @mixin atMedium {
             display: flex;
             justify-content: center;
+            margin: 10px 0 0 30px;
         }
 	}
 	
@@ -50,13 +53,12 @@
     & input {
         position: absolute;
         width: 70%;
-        padding: 6px 0;
+        padding: 6px 6px 6px 5px;
         border: none;
-        border-radius: 5px 0 0 5px;
+        border-radius: 0px 0 0 0px;
         left: 34%;
         transform: translateX(-34%);
         top: 40px;
-        
     }
     
     &__search--unitl-click {
@@ -105,6 +107,12 @@
     
     
     &__form--close {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        z-index: -10;
+        
+        
         @mixin atMedium {
             position: absolute;
             top: 15px;
@@ -128,6 +136,7 @@
         opacity: 1;
         transform: scaleX(1.2);
         visibility: visible;
+        z-index: 1;
     }
     
     &__search {
@@ -140,10 +149,12 @@
     }
     
       &__search--is-visible {
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1);
-        transition: all .3s ease-out;
+          @mixin atMedium {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+            transition: all .3s ease-out;
+          }
      }
     
 

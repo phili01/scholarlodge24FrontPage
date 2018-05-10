@@ -8,7 +8,6 @@ class HeaderEvents {
     events() {
           this.siteHeaderInput.click(this.hideItems.bind(this));
         
-//        this.siteHeaderInput.mouseleave(this.checkInput.bind(this));
     }
     
     hideItems() {
@@ -16,11 +15,6 @@ class HeaderEvents {
     }
 
     
-//    checkInput() {
-//        if(this.siteHeaderInput.val().length >= 1){
-//           this.siteHeaderInputDescription.addClass("form-control__input-description--is-hidden"); 
-//        }
-//    }
     
 }
 
